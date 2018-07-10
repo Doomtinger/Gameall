@@ -1,0 +1,252 @@
+body {
+  display: block;
+  margin: 8px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1920px;
+  min-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+  /*background-color: red;*/
+}
+.box {
+  position: relative;
+  /*padding-top: 56.25%;*/
+  /*background-color: yellow;*/
+  width: 1349px;
+  height: 758.813px;
+}
+
+.box .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 40;
+}
+
+.box .nav {
+  z-index: 20;
+  position: absolute;
+  width: 181px;
+  height: 647px;
+  left: 0;
+  top: 260px;
+  /*background-color: red;*/
+}
+.nav .nav__last{
+
+  text-decoration: none;
+  top: 159px;
+  position: absolute;
+  width: 119px;
+  left: 150px;
+  color: #c5be80;
+  font-size: 14px;
+
+}
+.nav .nav__active {
+  top: 50%;
+  left: 103%;
+  color: #c5be80;
+  position: absolute;
+  width: 62px;
+  font-size: 14px;;
+}
+.nav .nav__next{
+  top: 75.57959814528593%;
+  left: 77.69060773480663%;
+  color: #c5be80;
+  position: absolute;
+}
+.nav__active, .nav__last, .nav__next {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 10px;
+  line-height: 20px;
+  font-size: 14px;
+  white-space: nowrap;
+  z-index: 50;
+}
+
+.box .back{
+  position: absolute;
+  z-index: 15;
+  top: 62px;
+  right: 180px;
+  display: block;
+  margin-top: 7px;
+  height: 30px;
+  width: 106px;
+  margin-right: 12px;
+  opacity: .4;
+  color: #fff;
+
+}
+
+.box .music{
+  position: absolute;
+  display: block;
+  z-index: 10;
+  top: 50px;
+  right: 100px;
+  width: 71px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+
+}
+.box .music .music__in{
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  width: 48px;
+  height: 46px;
+  /*background-color: red;*/
+}
+.box .music .music__in span{
+  background: url(https://tianyu.res.netease.com/pc/zt/20160310144216/images/music-in_64ae2f7.png) no-repeat 0 0;
+}
+.box .music .music__out{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 72px;
+  height: 66px;
+  /*background-color: blue;*/
+}
+.box .music .music__out span{
+  background: url(https://tianyu.res.netease.com/pc/zt/20160310144216/images/music-out_568c6eb.png) no-repeat 0 0;
+}
+.box .music .music__text{
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  z-index: 10;
+  top:24px;
+  width:68px;
+
+}
+
+
+.box .last-page{
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 58px;
+  right: 28px;
+  height: 53px;
+  width: 53px;
+  background: url(https://tianyu.res.netease.com/pc/zt/20160310144216/images/last-wrap_6030e0d.png) no-repeat 0 0;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.box .last-page span{
+  position: absolute;
+  top: 13px;
+  left: 19px;
+  display: block;
+  height: 27px;
+  width: 14px;
+  background: url(https://tianyu.res.netease.com/pc/zt/20160310144216/images/last-arrow_b8c0312.png) no-repeat 0 0;
+}
+.page__thunder {
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+}
+.page__thunder .page__body{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  margin: 0;
+  padding: 0;
+}
+.page__thunder .page__body .leidian{
+  width: 11%;
+  top: 17%;
+  left: 44%;
+  position: absolute;
+  user-select: none;
+
+}
+.page__thunder .page__body .area__slogan_gulong{
+  width: 15%;
+  top: 33%;
+  left: 32%;
+  position: absolute;
+  z-index: 2;
+  user-select: none;
+}
+.page__thunder .page__body .area__pg--gulong{
+  width: 15.625%;
+  height: 31.4815%;
+  top: 33.5185%;
+  left: 31.875%;
+  position: absolute;
+
+}
+.page__thunder .page__body .area__pg__gulong{
+  width: 6.92%;
+  top:66.29%;
+  left: 35.4%;
+  position: absolute;
+}
+
+.page__thunder .page__body .area__slogan_qilin{
+  width: 15%;
+  top: 33.3%;
+  left: 54.5%;
+  position: absolute;
+  z-index: 2;
+}
+.page__thunder .page__body .area__pg--qilin{
+  width: 15%;
+  height: 31.4%;
+  top: 33%;
+  left: 54%;
+  position: absolute;
+}
+.page__thunder .page__body .area__pg__qilin{
+  width: 7%;
+  top: 66%;
+  left: 58%;
+  position: absolute;
+}
+
+.page__thunder .page__body .map-entrance{
+  bottom: 9.25926%;
+  position: absolute;
+  width: 100px;
+  left: 50%;
+  margin-top:-50px;
+  text-align: center;
+  /*color: red;*/
+  font-size: 12px;
+}
+.page__thunder .page__body .map-entrance .entrance{
+  display: inline-block;
+  margin-bottom: 10px;
+  /*text-align: center;*/
+  /*color: red;*/
+  /*font-size: 12px;*/
+  top: 674px;
+  height: 60px;
+}
+.page__thunder .page__body .map-entrance p{
+  display: block;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+}

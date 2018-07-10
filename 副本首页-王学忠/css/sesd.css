@@ -1,0 +1,57 @@
+*{
+  margin: 0 ;
+  padding: 0;
+}
+.sesd {
+  width: 546px;
+  height: 652px;
+  float: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.sesdd {
+  width: 251px;
+  height: 162px;
+  background: url(../img/sesd/intro_594a9b4.png);
+  position: absolute;
+  top: 401px;
+  left: 149px;
+  display: none;
+}
+
+.sesd .sesd_bg {
+  width: 546px;
+  height: 652px;
+  background: url(../img/sesd/bg_c1539d1.png);
+
+}
+
+.sesd .sesd_video {
+  display: block;
+  width: 68%;
+  position: absolute;
+  top: 47px;
+  left: 81px;
+  z-index: -1;
+}
+.bluefire{
+  width: 323px;
+  height: 10944px;
+  background: url(../img/sesd/show_cdc458f.png);
+  position: absolute;
+  top: 0px;
+}
+.bfbox{
+  width: 323px;
+  height: 572px;
+  border: 1px solid black;
+  position: absolute;
+  top: 44px;
+  left: 112px;
+  overflow: hidden;
+}
+

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html><head lang="en">
+<meta http-equiv="content-type" content="text/html; charset=gbk">
+    <meta charset="GBK">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>圣堂-职业介绍-《天谕》官方网站</title>
+    
+
+    <meta name="keywords" content="天谕,天谕官网,韩国Gstar,不删档,无束缚,天谕不删档,天谕激活码,天谕测试,半开放测试,东方幻想,江南,网易天谕,tianyu,发码,半开放测试,谕霸,网易2015,网易大作,无缝大世界,大有可玩,职业技能,天谕职业">
+    <meta name="description" content="《天谕》是由网易盘古工作室研发的大型无束缚3D幻想MMOPRG。历时五年、耗资过亿，为网易2015年战略级作品。
+《天谕》邀请著名作家江南一起构架东方幻想世界，设计了16170000㎡无缝地图，昼夜交替，风景如画；革新传统RPG战斗模式，融入动作元素，强调走位配合，并带给玩家极具挑战性的超级副本、千人同屏的激情领地战；游戏内还设计了双飞行、角色私人定制、工会建设等丰富系统玩法。内容丰富，自然大有可玩！">
+    <meta name="robots" content="all">
+    <meta name="author" content="网易，NetEase Inc.,hzwangshuyan@corp.netease.com">
+    <meta name="copyright" content="网易，NetEase Inc.">
+    <link rel="stylesheet" type="text/css" href="06holy_files/global.css">
+    <script type="text/javascript" src="06holy_files/jquery_002.js"></script>
+    <script type="text/javascript" src="06holy_files/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            /*  $("body").queryLoader2({
+             barColor: "#6e6d73",
+             backgroundColor: "#000",
+             percentage: true,
+             barHeight: 1,
+             completeAnimation: "#333",
+             minimumTime: 100
+             });*/
+        })
+    </script>
+    <style>
+        body{ background-color: #131418}
+        .m-slogan{ background: url(https://nie.res.netease.com/tianyu/qt/14/role_1204/images/st.png) 9999px 9999px no-repeat}
+        .g-rolesInf{background: url(https://nie.res.netease.com/tianyu/qt/14/role_1204/images/st_bg.jpg) top left no-repeat;}
+        .m-slogan-gr{ margin-left:-56px; height: 320px; background-position: 0px 0px;}
+        a.ws1 { top: 590px; left: 680px;}
+        a.ws2 { top: 720px; left: 638px;}
+        a.ws3 { top: 817px; left: 553px;}
+        a.ws4 { top:880px; left: 430px;}
+		.m-rolesInf a.ws .name{ width:93px;}
+        .videoWrap{ top:261px; left: 44px;}
+        .zb1{top:800px; left:408px}
+        .zb2{top:509px; left:571px}
+        .g-main{ width: 1310px; margin-left: 280px;}
+        /*  布局媒体查询 */
+        @media screen and (min-width: 1590px) {
+            .g-main{ width: auto; margin-left: 280px;}
+        }
+        @media screen and (min-width: 1486px) and (max-width:1589px ) {
+            .g-main{ width: 1310px; float: right; overflow: hidden;}
+        }
+        @media screen and  (max-width:1499px) {
+            html,body,.g-wrap{ min-width: 1346px;}
+            .g-main{ position: relative; width:auto; min-width: 1175px; margin-left: 176px;}
+            .g-rolesInf{ position: absolute; width: 1310px; right: 0;}
+        }
+
+        /* enter */
+        @-webkit-keyframes enter1 {
+            from{ margin-left: -8px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-moz-keyframes enter1 {
+            from{ margin-left: -8px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-o-keyframes enter1 {
+            from{ margin-left: -8px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-ms-keyframes enter1 {
+            from{ margin-left: -8px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @keyframes enter1 {
+            from{ margin-left: -8px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        /* 2 */
+        @-webkit-keyframes enter2 {
+            from{ margin-left: 20px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-moz-keyframes enter2 {
+            from{ margin-left: 2px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-o-keyframes enter2 {
+            from{ margin-left: 20px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-ms-keyframes enter2 {
+            from{ margin-left: 20px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @keyframes enter2 {
+            from{ margin-left: 20px;margin-top: -80px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        /* 3 */
+        @-webkit-keyframes enter3 {
+            from{ margin-left: 30px;margin-top: -38px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-moz-keyframes enter3 {
+            from{ margin-left: 30px;margin-top: -38px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-o-keyframes enter3 {
+            from{ margin-left: 30px;margin-top: -38px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-ms-keyframes enter3 {
+            from{ margin-left: 30px;margin-top: -38px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @keyframes enter3 {
+            from{ margin-left: 30px;margin-top: -38px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        /* 4 */
+        @-webkit-keyframes enter4 {
+            from{ margin-left: 58px;margin-top: -28px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-moz-keyframes enter4 {
+            from{ margin-left: 58px;margin-top: -28px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-o-keyframes enter4 {
+            from{ margin-left: 58px;margin-top: -28px;opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @-ms-keyframes enter4 {
+            from{ margin-left: 58px;margin-top: -28px; opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+        @keyframes enter4 {
+            from{ margin-left: 58px;margin-top: -28px; opacity: 0}
+            to{margin-left: 0px;margin-top: 0px; opacity: 1}
+        }
+
+        /* zoom */
+        @-webkit-keyframes zoom {
+            from{     -webkit-transform: scale(1,1);
+                -moz-transform: scale(1,1);
+                -o-transform:scale(1,1);
+                -ms-transform: scale(1,1);
+                transform: scale(1,1);}
+            to{    -webkit-transform: scale(0,0);
+                -moz-transform: scale(0,0);
+                -o-transform:scale(0,0);
+                -ms-transform: scale(0,0);
+                transform: scale(0,0);}
+        }
+        @-moz-keyframes zoom {
+            from{     -webkit-transform: scale(1,1);
+                -moz-transform: scale(1,1);
+                -o-transform:scale(1,1);
+                -ms-transform: scale(1,1);
+                transform: scale(1,1);}
+            to{    -webkit-transform: scale(0,0);
+                -moz-transform: scale(0,0);
+                -o-transform:scale(0,0);
+                -ms-transform: scale(0,0);
+                transform: scale(0,0);}
+        }
+        @-o-keyframes zoom {
+            from{     -webkit-transform: scale(1,1);
+                -moz-transform: scale(1,1);
+                -o-transform:scale(1,1);
+                -ms-transform: scale(1,1);
+                transform: scale(1,1);}
+            to{    -webkit-transform: scale(0,0);
+                -moz-transform: scale(0,0);
+                -o-transform:scale(0,0);
+                -ms-transform: scale(0,0);
+                transform: scale(0,0);}
+        }
+        @-ms-keyframes zoom {
+           from{     -webkit-transform: scale(1,1);
+                -moz-transform: scale(1,1);
+                -o-transform:scale(1,1);
+                -ms-transform: scale(1,1);
+                transform: scale(1,1);}
+            to{    -webkit-transform: scale(0,0);
+                -moz-transform: scale(0,0);
+                -o-transform:scale(0,0);
+                -ms-transform: scale(0,0);
+                transform: scale(0,0);}
+        }
+        @keyframes zoom {
+            from{     -webkit-transform: scale(1,1);
+                -moz-transform: scale(1,1);
+                -o-transform:scale(1,1);
+                -ms-transform: scale(1,1);
+                transform: scale(1,1);}
+            to{    -webkit-transform: scale(0,0);
+                -moz-transform: scale(0,0);
+                -o-transform:scale(0,0);
+                -ms-transform: scale(0,0);
+                transform: scale(0,0);}
+        }
+
+    </style>
+<script type="text/javascript" src="06holy_files/jquerymixNIE.js"></script></head>
+<body>
+<div class="g-wra f-cbp">
+    <div class="windowTip">请使用chrome或IE9以上版本浏览器以获得最佳的浏览体验</div>
+    <div class="g-side">
+        <a class="u-logo f-ma f-db" href="http://ty.163.com/" target="_blank"><img src="06holy_files/logo.png"></a>
+        <a href="http://ty.163.com/" class="gotosite" target="_blank">官网首页</a>
+        <div class="m-nav">
+            <a class="f-transform nav--link" href="https://ty.163.com/role/yecha.html?n">
+                <span class="yc nav--icon f-transformBack"></span>
+                <span class="yc nav--name f-transformBack">业刹</span>
+            </a>
+            <a class="f-transform" href="https://ty.163.com/role/guangren.html?n"><span class="gr f-transformBack"></span></a>
+            <a class="f-transform" href="https://ty.163.com/role/yuxu.html?n"><span class="yx f-transformBack"></span></a>
+            <a class="f-transform" href="https://ty.163.com/role/linglong.html?n"><span class="ll f-transformBack"></span></a>
+            <a class="f-transform" href="https://ty.163.com/role/yantian.html?n"><span class="yt f-transformBack"></span></a>
+            <a class="active f-transform" href="https://ty.163.com/role/shengtang.html?n"><span class="st f-transformBack"></span></a>
+            <a class="f-transform" href="https://ty.163.com/role/liuguang.html?n"><span class="lg f-transformBack"></span></a>
+        </div>
+    </div>
+    <div class="g-main  f-cb">
+        <!-- slogan { -->
+        <div class="g-solgan f-fl">
+            <p class="m-slogan m-slogan-gr">光刃</p>
+            <p class="m-description">忠于信仰的铁血守护者，近战物理输出，<br>
+                铜墙铁壁，具有强大的防御力。<a class="j-viewmore" onclick="pgcheck_code('page=video&amp;btn=vds11','查看更多')">查看更多</a></p>
+            <p class="m-hard f-vama">上手难度 <b></b><b></b><b></b><b></b><b class="no"></b></p>
+            <div class="m-rolesVideo">
+                <a class="j-role" onclick="pgcheck_code('page=video&amp;btn=vds2','职业')">
+                    <span class="btnVideo f-transformBack"></span>
+                    <span class="videoImg j-roleSwf f-transformBack"><img src="06holy_files/st-zy.gif"> </span>
+                    <span class="title f-transformBack">职业</span> </a>
+                <a class="right j-fight cube" onclick="pgcheck_code('page=video&amp;btn=vds3','实战')">
+                    <span class="btnVideo f-transformBack"></span>
+                    <span class="videoImg j-fightSwf f-transformBack"><img src="06holy_files/st-sz.gif"></span>
+                    <span class="title f-transformBack">实战</span></a>
+            </div>
+        </div>
+        <!-- } slogan -->
+        <!-- rolesInf { -->
+        <div class="g-rolesInf">
+            <div class="m-rolesInf">
+                <a class="ws ws1" onclick="pgcheck_code('page=video&amp;btn=vd64','奔雷·冲')"><span class="img"><img src="06holy_files/ws-st-1.jpg"></span><span class="name">奔雷·冲</span> </a>
+                <a class="ws ws2" onclick="pgcheck_code('page=video&amp;btn=vd65','雷神·千裂破')"><span class="img"><img src="06holy_files/ws-st-2.jpg"></span><span class="name">雷神·千裂破</span> </a>
+                <a class="ws ws3" onclick="pgcheck_code('page=video&amp;btn=vd66','锁·擒魔')"><span class="img"><img src="06holy_files/ws-st-3.jpg"></span><span class="name">锁·擒魔</span> </a>
+                <a class="ws ws4" onclick="pgcheck_code('page=video&amp;btn=vd67','雷神·绝对守护')"><span class="img"><img src="06holy_files/ws-st-4.jpg"></span><span class="name">雷神·绝对守护</span> </a>
+            <div class="videoWrap"><div class="videoUnit"> </div><a class="closeVideo">关闭</a></div>
+                <a class="zb zb1" onclick="pgcheck_code('page=video&amp;btn=vd68','武器')"> <span class="imgWrap"> <span class="img"><img src="06holy_files/wp-st-1.jpg"></span><b>武器</b></span></a>
+                <a class="zb zb2" onclick="pgcheck_code('page=video&amp;btn=vd69','时装')"> <span class="imgWrap"><span class="img"><img src="06holy_files/wp-st-2.jpg"></span><b>时装</b></span></a>
+            </div>
+        </div>
+        <!-- }  rolesInf -->
+    </div>
+</div>
+<div id="mask" class="u-mask u-mask-body"></div>
+<!-- 信息弹窗 -->
+<div class="m-opendiv f-cb">
+    <div class="cnt f-fl">
+        <h2 class="h2"> 武器</h2>
+        <p>重器 盾</p>
+        <h2 class="h2"> 职业历史</h2>
+        <p>圣堂，忠于信仰的铁血守护者。 自五帝纪元起，圣堂弟子便向黄帝起誓，甘愿以雷霆炼体，以自身的鲜血与勇气守护文明。圣堂永远不懂"独善其身"，只会尽一切努力惩恶扶弱。正因如此，在数百年后的今日，圣堂仍然是夏大陆人民最信任的忠毅之师。</p>
+        <h2 class="h2"> 职业特征</h2>
+        <p>近战物理输出。铜墙铁壁，身先士卒。具有强大的防御力，唯一能与强大敌人正面对抗的职业。但必须与敌人近身战斗，爆发力较弱。</p>
+        <h2 class="h2"> 团队定位</h2>
+        <p>强大的坦克，坚实的厚盾。</p>
+    </div>
+    <div class="video_pop"></div>
+    <a class="closeBtn f-fr"></a>
+</div>
+<!-- 职业视频弹窗 -->
+<script type="text/javascript">
+    $("head").append('<script type="text/javascript" src="https://nie.res.netease.com/comm/js/jquery(mixNIE).last.js"><\/script>');
+
+    var b_name = navigator.appName;
+    var b_version = navigator.appVersion;
+    if (b_name == "Microsoft Internet Explorer") {
+        var version = b_version.split(";");
+        var trim_version = version[1].replace(/[ ]/g, "");
+        if (trim_version == "MSIE7.0" || trim_version == "MSIE6.0" || trim_version == "MSIE8.0") {
+            $(".windowTip").show();
+        }
+    }
+
+    /* 职业实战视频 效果切换 */
+    $(".m-rolesVideo").delegate("a:not(.cube)","mouseenter",function(){
+        $(this).addClass("cube").siblings().removeClass("cube");
+    });
+    /* 无双技能列表 */
+    var videoList=[
+        "https://nie.res.netease.com/tianyu/qt/14/role_1204/swf/st-ws-1.swf",
+        "https://nie.res.netease.com/tianyu/qt/14/role_1204/swf/st-ws-2.swf",
+        "https://nie.res.netease.com/tianyu/qt/14/role_1204/swf/st-ws-3.swf",
+        "https://nie.res.netease.com/tianyu/qt/14/role_1204/swf/st-ws-4.swf"
+    ];
+    /* 武器，装备，列表 */
+    var imgList=[
+        "https://nie.res.netease.com/tianyu/qt/14/role_1204/images/model.swf?ver5&xmlUrl=https://nie.res.netease.com/tianyu/qt/14/role_1204/asset/pics-st1.xml?ver5.1",
+        "https://nie.res.netease.com/tianyu/qt/14/role_1204/images/model.swf?ver5&xmlUrl=https://nie.res.netease.com/tianyu/qt/14/role_1204/asset/pics-st2.xml?ver5.1"
+    ];
+
+
+    /* 武器装备播放 */
+    $(".m-rolesInf").delegate("a.zb","click",function(){
+        var tz=$(this).index("a.zb");
+        $(".videoWrap").show();
+        setTimeout(function(){ $(".videoWrap").addClass("scale")},100);
+        setTimeout(function(){
+            openVideo($('.videoUnit'),null,imgList[tz],"610px","610px")
+        },1100);
+    })
+    /* 无双视频播放 */
+    $(".ws").click(function(){
+        var tw=$(this).index();
+        $(this).find(".img").addClass("active")
+        $(this).siblings().find(".img").removeClass("active");
+        $(".videoWrap").show();
+        setTimeout(function(){ $(".videoWrap").addClass("scale")},100);
+        if($(".videoWrap").is(".scale")){
+            openVideo($('.videoUnit'),null,videoList[tw],"610px","610px")
+        }else{
+            setTimeout(function(){ openVideo($('.videoUnit'),null,videoList[tw],"610px","610px") },1100);
+        }
+    });
+
+    $(".closeVideo").click(function(){
+        $(".ws").find(".img").removeClass("active")
+        $('.videoUnit').empty();
+        $(".videoWrap").removeClass("scale");
+        setTimeout(function(){ $(".videoWrap").hide()},300);
+    });
+
+    /* 查看更多信息 弹窗 */
+    $(".j-viewmore").click(function(){
+        $(".m-opendiv .cnt").show();
+        resizeOpendiv($(".m-opendiv"),760,null);
+        $(".m-opendiv,#mask").fadeIn();
+    });
+    /* 职业 实战视频 */
+    $(".m-rolesVideo").delegate("a.cube",{"click":function(){
+        var videoPlay;
+        if($(this).is(".j-role")){
+            videoPlay={v1:"https://tianyu.v.netease.com/2014/0418/shengtan_1.mp4",v2:"https://tianyu.v.netease.com/2014/0418/shengtan_1.mp4"}
+        }
+        if($(this).is(".j-fight")){
+            videoPlay={v1:"https://tianyu.v.netease.com/2014/1229/st-sz-s.f4v",v2:"https://tianyu.v.netease.com/2014/1229/st-sz-h.f4v"}
+        }
+        resizeOpendiv($(".m-opendiv"),760,null);
+        $(".m-opendiv .video_pop").show();
+        $(".m-opendiv,#mask").fadeIn();
+        openVideo($(".m-opendiv .video_pop"),videoPlay,0,"730px","480px");}
+    });
+
+    /* 关闭弹窗浮层 */
+    $(".closeBtn").click(function(){
+        $(".m-opendiv .video_pop").empty()
+        $(".m-opendiv .video_pop,.m-opendiv .cnt").hide();
+        $(".m-opendiv,#mask").fadeOut();
+    })
+    /* 窗口尺寸改变 */
+    $(window).resize(function(){
+        if( $(".m-opendiv").is(":visible")){
+            resizeOpendiv($(".m-opendiv"),760,null);
+        }
+    });
+    /* 窗口改变函数 */
+    function resizeOpendiv(obj,w,h){
+        $("#mask").css({"width":0,"height":0});
+        var winw=$(document).width() > $(window).width() ? $(document).width() : $(window).width();
+        var winh=$(document).height() > $(window).height() ? $(document).height() : $(window).height();
+        obj.css({"left":(winw-w)/2+"px","top":$(window).scrollTop()+150+"px"});
+        $("#mask").css({"width":winw,"height":winh});
+    }
+
+    /* 播放函数 */
+    function openVideo(obj,video,type,w,h)
+    {
+        nie.use(["nie.util.video","util.swfobject"],function(){
+            obj.flash({
+                'swf': type==0 ? 'https://tianyu.res.netease.com/gw/14v4/player/player.swf' : type,
+                'width': w,
+                'height':h,
+                'wmode':'transparent',
+                'allowFullScreen':'true',
+                'flashvars':video==null ? "" : video
+            });
+        })
+    }
+
+    setTimeout(function(){
+        $(".imgWrap").removeClass("a-imgWrap")
+    },3000)
+
+</script>
+<!-- 底部代码 Start -->
+<div id="botCode">
+    <script type="text/javascript">
+        function pgcheck_code(_url,_title)
+        {
+            neteaseTracker(!0,"https://pgclick.163.com/ty/"+_url,_title,"pgclick");
+        }
+    </script>
+    <!-- END NetEase Devilfish 2006 -->
+    <!-- 专有(如专题) 统计 End -->
+</div>
+<!-- 底部代码 End -->
+
+</body></html>

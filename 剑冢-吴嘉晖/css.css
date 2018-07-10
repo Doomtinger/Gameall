@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: 18px FangSong;
+  text-align: center;
+}
+div {
+  text-align: left;
+}
+li {
+  list-style: none;
+}
+a {
+  list-style: none;
+}
+.fx {
+  position: fixed;
+}
+.re {
+  position: relative;
+}
+.ab {
+  position: absolute;
+}
+.fl {
+  flaot: left;
+}
+.fr {
+  float: right;
+}
+
+
+/*顶部*/
+.top {
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  left: 20px;
+  top: 20px;
+}
+.top_ul {
+  top: 20px;
+  height: 43px;
+  right: 20px;
+  /*background: pink;*/
+}
+.top_ul li {
+  float: left;
+  margin: 0 8px;
+}
+.top_ul li a {
+  display: block;
+}
+.top1 {
+  width: 106px;
+  height: 43px;
+  background: url("img/toCollection_7d1a986.png") center no-repeat;
+}
+.top2 {
+  width: 43px;
+  height: 43px;
+  background: url("img/fullscreen_1414826.png");
+}
+.audio_con {
+  border-left: 0.5px solid #fff;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.audio_pic {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  vertical-align: top;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.audio_line1 {
+  display: block;
+  width: 2px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  left: 38%;
+}
+.audio_line2 {
+  display: block;
+  width: 2px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  right: 38%;
+}
+.audio_txt {
+  display: inline-block;
+  color: #fff;
+  font: 14px/45px Microsoft Yahei;
+}

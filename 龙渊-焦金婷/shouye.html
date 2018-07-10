@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/shouye.css">
+
+</head>
+<body>
+<video src="images/bg4.mp4" autoplay class="vid"></video>
+
+<!--头部30-80-->
+<div class= 'container'>
+    <!--里面的盒子-->
+    <div class= 'box'>
+
+      <!--天谕图像-->
+      <a class="logo js-position" href="longyuan.html">
+        <img src="images/toubu/logo.png">
+      </a>
+      <div class= 'nav'>
+        <img src="images/toubu/nav1_6c1070a.png" alt="" class= 'nav__bg full'>
+        <a href="thunder.html" class= 'nav__last' data-link= 'thunder'>雷电区</a>
+        <span class= 'nav__active'>龙渊入口</span>
+        <a href="javascript:;" class= 'nav__last'></a>
+      </div>
+
+      <a href="../副本首页-王学忠/tianyu.html" title="" class="back" >副本汇总</a>
+      <!--音乐部分-->
+      <!--音乐-->
+      <div class="music">
+
+        <div class="music__text">音乐</div>
+
+      </div>
+        <a href="javascript:;" class="last-page" title="返回" style="position: absolute; display: none;">
+          <span></span>
+        </a>
+      <!--探秘龙渊图片-->
+      <div class= 'page'>
+        <div class= 'page__body'>
+          <img class="slogan" src="images/toubu/slogan_6eac742.png" data-scale="w:687,t:415,l:600">
+          <div class= 'slogan__btn' id = 'slogen__btn' data-link= 'map'>
+            <a href="map.html">探秘龙渊</a>
+          </div>
+        </div>
+        <!--装video的盒子-->
+        <div class= 'page_body_video'>
+          <video preload="auto" src="https://tianyu.v.netease.com/2016/0310/bg4.mp4" width="100%"></video>
+        </div>
+        <!--背景图片-->
+        <div class= 'bg'>
+          <img src="images/toubu/map-bg_a1d7466.jpg" alt="">
+        </div>
+        <!--背景图-->
+        <div class= 'page_body_loading'>
+          <img class="full" src="">
+          <img class="loading_img" src="">
+          <div class= 'loading_wrap'>
+            <div class= 'loading_bar'></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<script>
+var vid = document.getElementsByTagName('video')[0];
+var container = document.getElementsByClassName('container')[0];
+	setTimeout(function() {
+		vid.style.display = 'none';
+		container.style.display = 'block';
+	}, 4000);
+</script>
+</body>
+</html>

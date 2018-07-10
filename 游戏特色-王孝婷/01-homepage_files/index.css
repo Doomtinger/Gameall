@@ -1,0 +1,1259 @@
+/*设置整体格式*/
+body{background:#000}
+html,body{height:100%;width:100%;margin:0;padding:0;overflow:hidden}
+/*感觉要用很多定位的样子*/
+.g-wrap{
+  position:relative;
+  height:100%;
+  width:100%;
+  overflow:hidden}
+
+.blockPub{
+  display:block;
+}
+.nonePub{
+  display:none;
+}
+/*首页盒子的公共模块,导航栏等-->开始*/
+/*logo位置*/
+.logo{
+  width:168px;
+  height:84px;
+  background:url(../images/logo.png) no-repeat;display:block;
+  position:absolute;
+  top:70px;
+  left:80px;
+  z-index:999}
+
+/*包着左侧导航栏边框线的位置*/
+.line1{
+  position:absolute;
+  top:47px;
+  left:56px;
+  right:56px;
+  height:1px;
+  background:#998867;
+  z-index:999}
+.line2{
+  position:absolute;
+  top:47px;
+  bottom:47px;
+  right:56px;
+  width:1px;
+  background:#998867;
+  z-index:999}
+.line3{
+  position:absolute;
+  bottom:47px;
+  left:56px;
+  right:56px;
+  height:1px;
+  background:#998867;
+  z-index:999}
+.line4{
+  position:absolute;
+  top:47px;
+  bottom:50%;
+  left:56px;
+  width:1px;
+  background:#998867;
+  margin-bottom:350px;
+  z-index:999}
+.line5{
+  position:absolute;
+  bottom:47px;
+  top:50%;
+  left:56px;
+  width:1px;
+  background:#998867;
+  margin-top:350px;
+  z-index:999}
+
+/*导航栏*/
+.m-nav{
+  position:absolute;
+  top:50%;
+  margin-top:-335px;
+  left:17px;
+  z-index:999}
+.m-nav .navNameCnt{
+  float:left;
+  width:50px;
+  padding-top:10px}
+.m-nav .navNameCnt span{
+  display:block;
+  color:#998867;
+  font-weight:700;
+  margin-bottom:55px;
+  cursor:pointer}
+.m-nav .navNameCnt span:hover{color:#baa884}
+.m-nav .navNameCnt span.active{color:#baa884}
+
+/*导航栏后面横线的样式*/
+.m-nav .lineCnt{
+  float:left;
+  width:50px;
+  margin-top:-18px;
+  margin-left:-15px}
+.m-nav .lineCnt span{
+  width:12px;
+  display:block;
+  height:2px;
+  margin-top:7px;
+  background:#998867}
+.m-nav .lineCnt span.long{width:18px}
+.m-nav .line{
+  width:10px;
+  height:1px;
+  margin-top:6px;
+  background-color:#998867;
+  transition: all .5s ease-out 0s;}
+.m-nav .line.line-long{width:15px;min-width:20px}
+.m-nav .line.red{background-color:red}
+
+/*暂时背景声音不设置样式*/
+/*首页盒子的公共模块,导航栏等-->结束*/
+
+
+/*天谕游戏特色:第一页:首页开始.m-page-home*/
+.m-page{
+  position:absolute;width:100%;height:100%;overflow:hidden}
+/*首页点击后到达的第二页背景及内容*/
+.m-page-home .bg{
+  position:absolute;width:100%;height:100%;
+  background:url(../images/home/artist_b186e75.jpg)no-repeat center center;
+  background-size:cover;}
+.m-page-home .bgLight{
+  position:absolute;width:100%;height:100%;
+  background:url(../images/home/light_105a721.jpg) no-repeat center center;
+  background-size:cover;
+  animation-name:lightAnimation;
+  animation-duration:2s;
+  animation-iteration-count:infinite;
+  /*z-index:1;*/
+ }
+@-webkit-keyframes lightAnimation{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.m-page-home .bg .man{
+  background:url(../images/home/role_8dc1f26.png) no-repeat;
+  width:329px;height:266px;
+  position:absolute;bottom:0;right:-10px;
+  animation-name:roleAnimation;
+  animation-duration:2s;
+  animation-iteration-count:infinite;}
+@-webkit-keyframes roleAnimation{0%{right:-5px}50%{right:0}100%{right:-5px}}
+/*首页显示第一页的背景包括大文字都是背景图片*/
+/*cover:把背景图片放大到适合元素容器的尺寸，图片比例不变。*/
+.m-page-home .mask{
+  position:absolute;width:100%;height:100%;
+  background:url(../images/home/mask_149757c.png) no-repeat center center;
+  background-size:cover;}
+/*首页显示的第一页的文字,基本都是图片*/
+.m-page-home .intro{
+  position:absolute;width:322px;height:172px;
+  margin-left:-161px;
+  left:50%;
+  bottom:150px}
+.m-page-home .intro .en{
+  position:absolute;width:190px;height:16px;
+  background:url(../images/home/en_title_8feacc3.png) no-repeat;left:50%;
+  margin-left:-95px}
+.m-page-home .intro .line{
+  position:absolute;width:129px;height:9px;
+  background:url(../images/home/gap_line_d4fe506.png) no-repeat;left:50%;margin-left:-64px;top:38px}
+.m-page-home .intro .txt{
+  position:absolute;width:322px;height:57px;
+  background:url(../images/home/intro_47e95d8.png) no-repeat;
+  left:50%;
+  margin-left:-161px;
+  top:70px}
+/*首页显示第一页的鼠标,会闪闪发光*/
+.m-page-home .mouseCnt{
+  position:absolute;left:50%;bottom:106px;
+  width:109px;height:36px;
+  background:url(../images/fly/mouse_e8623d5.png) no-repeat center center;
+  margin-left:-54px}
+.m-page-home .mouseCnt .mouse{
+  width:109px;height:15px;
+  background:url(../images/fly/mouseText_6510f37.png) no-repeat center center;
+  position:absolute;top:50px;
+  /*ccs3的动画效果详细见百度*/
+  animation-name:mouseAnimation;
+  animation-duration:2s;
+  animation-iteration-count:infinite;}
+@-webkit-keyframes mouseAnimation{0%{opacity:.5}50%{opacity:1}100%{opacity:.5}}
+/*第一页:首页结束*/
+
+/*第二页:简史开始.m-page-history*/
+/*简史背景*/
+.m-page-history{
+  background:url(../images/history/bg_440e229.jpg) no-repeat center center;background-size:cover}
+.m-page-history .magazine{
+  width:100%;height:100%;
+  position:absolute;}
+/*简史左边页面*/
+.m-page-history .leftPage{
+  width:50%;position:absolute;height:100%;left:0;
+  background:red;background:url(../images/history/page1_cff9e75.jpg);background-size:cover}
+/*简史右边页面*/
+.m-page-history .rightPage{
+  width:50%;position:absolute;
+  height:100%;left:50%;
+  background:#ff0}
+/*第一页*/
+.m-page-history .page1{
+  background:url(../images/history/page2_6198065.jpg) no-repeat left center;
+  background-size:cover}
+/*第二页*/
+.m-page-history .page2{
+  background:url(../images/history/page1_cff9e75.jpg) no-repeat right center;
+  background-size:cover}
+/*首页显示的文字*/
+.m-page-history .historyTitle{
+  width:546px;
+  height:180px;
+  background:url(../images/history/title_b2e882d.png) no-repeat center center;
+  position:absolute;top:50%;left:10%;
+  margin-top:-104px;
+  margin-right:-273px;
+  background-size:cover}
+/*右边的三个按钮*/
+.m-page-history .pageBtnsCnt{
+  height:674px;width:389px;
+  position:absolute;top:50%;left:50%;
+  margin-top:-337px;
+  margin-left:-194px}
+.m-page-history .pageVideoBtn{position:absolute}
+.m-page-history .pageVideoBtn1{
+  background:url(../images/history/img-1_4b7263b.jpg) no-repeat center center;
+  width:359px;height:201px;
+  cursor:pointer;
+  background-size:cover}
+/*按钮的触摸效果*/
+.m-page-history .pageVideoBtn1:hover{
+  background:url(../images/history/img_hover-1_36b59c8.jpg) no-repeat;
+  background-size:cover}
+.m-page-history .pageVideoBtn2{
+  background:url(../images/history/img-2_c0c0e38.jpg) no-repeat center center;
+  width:359px;height:201px;
+  cursor:pointer;
+  background-size:cover}
+.m-page-history .pageVideoBtn2:hover{
+  background:url(../images/history/img_hover-2_ba70dc5.jpg) no-repeat;
+  background-size:cover}
+.m-page-history .pageVideoBtn3{
+  background:url(../images/history/img-3_37aaa87.jpg) no-repeat center center;
+  width:359px;height:201px;
+  cursor:pointer;
+  background-size:cover}
+.m-page-history .pageVideoBtn3:hover{
+  background:url(../images/history/img_hover-3_abbe902.jpg) no-repeat;
+  background-size:cover}
+/*翻面后的文字*/
+.m-page-history .historyTitle1{
+  background:url(../images/history/title1_01c9bf7.png) no-repeat center top;
+  width:600px;
+  height:132px;
+  position:absolute;top:50%;right:50%;
+  margin-top:-136px;
+  margin-right:-320px;
+  padding-top:140px;
+  text-align:center;
+  line-height:28px;
+  color:#333;
+  font-size:15px}
+/*视频播放按钮*/
+.m-page-history .videoBtn1{
+  background:url(../images/history/videoBtn-1_2b3c7da.jpg) no-repeat;
+  background-size:cover;
+  width:438px;height:619px;
+  position:absolute;
+  cursor:pointer}
+.m-page-history .videoIcon{
+  width:84px;height:84px;
+  position:absolute;
+  display:block;
+  margin-top:-42px;
+  margin-left:-42px;
+  top:50%;left:50%;
+  background:url(../images/sprite_6008cf4.png) no-repeat -47px -30px}
+/*按钮触摸*/
+.m-page-history .videoBtn1:hover .videoIcon,
+.m-page-history .videoBtn2:hover .videoIcon,
+.m-page-history .videoBtn3:hover .videoIcon{background-position:-47px -126px}
+.m-page-history .historyTitle2{
+  background:url(../images/history/title2_b1a0fad.png) no-repeat center top;
+  width:600px;height:132px;
+  position:absolute;top:50%;right:50%;
+  margin-top:-136px;
+  margin-right:-320px;
+  padding-top:140px;
+  text-align:center;
+  line-height:28px;
+  color:#333;
+  font-size:15px}
+.m-page-history .videoBtn2{
+  background:url(../images/history/videoBtn-2_e94b750.jpg) no-repeat;
+  background-size:cover;
+  width:438px;
+  height:619px;
+  position:absolute;cursor:pointer}
+/*翻面后文字*/
+.m-page-history .historyTitle3{
+  background:url(../images/history/title3_f7a6adb.png) no-repeat center top;
+  width:600px;height:132px;
+  position:absolute;top:50%;right:50%;
+  margin-top:-136px;
+  margin-right:-320px;
+  padding-top:140px;
+  text-align:center;
+  line-height:28px;
+  color:#333;
+  font-size:15px}
+.m-page-history .videoBtn3{
+  background:url(../images/history/videoBtn-3_9d4432a.jpg) no-repeat;
+  background-size:cover;
+  width:438px;
+  height:619px;
+  position:absolute;cursor:pointer}
+/*下面的显示下一页*/
+.m-page-history .pageNum{
+  position:absolute;
+  z-index:999;
+  bottom:60px;  left:50%;
+  width:200px;height:50px;
+  margin-left:-100px}
+.m-page-history .pageNum .prevBtn{
+  left:0;
+  position:absolute;
+  padding-right:46px;
+  background:url(../images/history/left_2c76178.png) no-repeat center right;
+  cursor:pointer;
+  font-size:14px;
+  color:#998867}
+.m-page-history .pageNum .prevBtn:hover{text-decoration:underline}
+.m-page-history .pageNum .nextBtn{
+  right:0;
+  position:absolute;
+  padding-left:46px;
+  background:url(../images/history/right_c67de08.png) no-repeat left center;
+  cursor:pointer;
+  font-size:14px;
+  color:#998867}
+.m-page-history .pageNum .nextBtn:hover{text-decoration:underline}
+
+/*第二页:简史结束*/
+
+/*第三页:大陆开始.m-page-map*/
+.m-page-map{
+  background:url(../images/map/bg_0f8d6e3.jpg) no-repeat center center;
+  background-size:cover}
+/*map的文字部分*/
+.m-page-map .mapTitle{
+  width:512px;height:124px;
+  background: url(../images/map/title_db0561d.png) no-repeat;
+  position:absolute;left:50%;margin-left:-256px;top:50%;   margin-top:-333px;}
+/*map的背景图片*/
+.m-page-map .map{
+  width:952px;height:541px;
+  background:url(../images/map/map_a3c8ca2.png) no-repeat;
+  margin-left:-476px;
+  margin-top:-180px;
+  top:50%;left:50%;
+  position:absolute;
+}
+/*两朵云的位置*/
+.m-page-map .map .cloud-1{
+  width:407px;height:167px;
+  background:url(../images/map/cloud1_4841183.png) no-repeat;
+  position:absolute;top:200px;left:0;opacity:1;
+  animation-name:mapCloudAnimation1;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+}
+@-webkit-keyframes mapCloudAnimation1{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.m-page-map .map .cloud-2{
+  width:344px;height:111px;
+  position:absolute;
+  background:url(../images/map/cloud2_eb8d95e.png) no-repeat;
+  top:10px;left:600px;
+  animation-name:mapCloudAnimation2;
+  animation-duration:10s;
+  animation-iteration-count:infinite
+}
+@-webkit-keyframes mapCloudAnimation2{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+/*map小图片的内嵌城市*/
+.m-page-map .map .city1{
+  width:135px;height:156px;
+  position:absolute;top:156px;left:36px;
+  cursor:pointer}
+.m-page-map .map .city2{
+  width:148px;height:152px;
+  position:absolute;top:106px;left:439px;
+  cursor:pointer}
+.m-page-map .map .city3{
+  width:207px;height:154px;
+  position:absolute;top:335px;left:711px;
+  cursor:pointer}
+/*显示在城市下面的按钮点开可以播放详细信息,精灵图*/
+.m-page-map .map .city .videoIcon{
+  width:50px;height:50px;
+  background:url(../images/sprite_6008cf4.png) no-repeat -47px -233px;
+  display:block;
+  margin-left:-25px;
+  margin-top:-25px;
+  position:absolute;
+  top:62px;left:70px}
+/*触摸的时候更改图片*/
+.m-page-map .map .city:hover .videoIcon{
+  background-position:-47px -295px}
+.m-page-map .map .city1 .videoIcon{top:86px;left:84px}
+.m-page-map .map .city3 .videoIcon{top:72px;left:107px}
+.m-page-map .map .cityName{
+  width:88px;height:23px;position:absolute;display:block}
+.m-page-map .map .cityName-1{
+  background:url(../images/map/t1_6558c01.png) no-repeat;
+  top:-15px;left:40px}
+.m-page-map .map .cityName-2{
+  background:url(../images/map/t2_1353a94.png) no-repeat;top:-34px;left:23px}
+.m-page-map .map .cityName-3{
+  background:url(../images/map/t3_48bf81e.png) no-repeat;
+  top:-29px;left:58px}
+/*触摸播放按钮会出现文字:使用js做*/
+.m-page-map .cityIntro{
+  background:rgba(0,0,0,.7);
+  position:absolute; left:50%;top:120px;
+  width:300px;height:40px;
+  padding:20px;
+  color:#fff;
+  line-height:20px;
+  margin-left:-170px;
+  display:none}
+.m-page-map .map .border{
+  display:block;
+  position:absolute;top:-4px;left:-5px;
+  width:98px;height:31px;
+  background:url(../images/map/tborder_c3292fe.png) no-repeat;}
+.m-page-map .map .border-1{-webkit-animation-name:mapBorderAnimation;
+  animation-name:mapBorderAnimation;animation-duration:2s;animation-iteration-count:infinite;animation-delay:.7s;animation-timing-function:linear}
+.m-page-map .map .border-2{
+  animation-name:mapBorderAnimation;animation-duration:2s;animation-iteration-count:infinite;animation-delay:1.4s;animation-timing-function:linear}
+.m-page-map .map .border-3{
+  animation-name:mapBorderAnimation;animation-duration:2s;animation-iteration-count:infinite;animation-delay:2s;animation-timing-function:linear}
+@-webkit-keyframes mapBorderAnimation{0%{opacity:1;transform:scale(1,1)}100%{opacity:0;transform:scale(1.4,1.4)}}
+/*第三页:大陆结束*/
+
+/*第四页:职业开始.m-page-role*/
+/*职业的背景图片:注意要根据浏览器来自适应*/
+.m-page-role{
+  background:url(../images/role/bg_c309826.jpg) no-repeat center center;background-size:cover}
+.m-page-role .videoCnt{
+  position:absolute;width:100%;height:100%}
+.m-page-role .videoCnt video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+}
+.m-page-role .videoCnt .videoBlack{
+  position:absolute;width:100%;height:100%;background:url(../images/role/black_ff2213a.png)}
+/*职业中间文字部分:需要考虑布局问题所有缩放都是百分之几,然后通过margin来确定位置*/
+.m-page-role .cnt .rhombus{
+  position:absolute;top:50%;left:50%;
+  width:527px;height:527px;
+  background:url(../images/role/rhombus_60812f8.png) no-repeat;
+  margin-left:-263px;
+  margin-top:-263px
+}
+/*中间文字部分*/
+/*第一行*/
+.m-page-role .cnt .rhombus .h1{
+  position:absolute;top:192px;left:128px;
+  width:283px;height:67px;
+  background:url(../images/role/title_457b6de.png) no-repeat;
+  }
+/*第二行*/
+.m-page-role .cnt .rhombus .h2{
+  width:363px;height:26px;
+  background:url(../images/role/h2_caae3d5.png) no-repeat;
+  position:absolute;top:277px;left:82px}
+/*第三行*/
+.m-page-role .cnt .rhombus .line{
+  width:230px;height:8px;
+  background:url(../images/role/line_c8ea559.png) no-repeat;
+  position:absolute;top:326px;left:150px}
+/*职业的图标和文字部分*/
+.m-page-role .cnt .roleCnt{
+  position:absolute;width:1px;height:1px;
+  left:50%;top:50%;
+  }
+/*角色相同的css*/
+.m-page-role .cnt .roleCnt .role{
+  position:absolute;bottom:-74px;
+  width:200px;height:200px;
+  cursor:pointer}
+/*主要是角色定位时候的css*/
+.m-page-role .cnt .roleCnt .role-1{
+  background:url(../images/role/role1_f5f4856.png) no-repeat;right:597px}
+.m-page-role .cnt .roleCnt .role-2{
+  background:url(../images/role/role2_d76d54f.png) no-repeat;right:437px}
+.m-page-role .cnt .roleCnt .role-3{
+  background:url(../images/role/role3_0f52abf.png) no-repeat;right:278px}
+.m-page-role .cnt .roleCnt .role-4{
+  background:url(../images/role/role4_be2a6d1.png) no-repeat;left:278px}
+.m-page-role .cnt .roleCnt .role-5{
+  background:url(../images/role/role5_f31b586.png) no-repeat;left:437px}
+.m-page-role .cnt .roleCnt .role-6{
+  background:url(../images/role/role6_146b3a6.png) no-repeat;left:597px}
+.m-page-role .cnt .roleCnt .role-7{
+  background:url(../images/role/role7_f3c2a65.png) no-repeat;
+  left:-102px;top:93px}
+/*界面缩小后的格式*/
+@media(max-width:1800px)
+{.m-page-role .cnt .rhombus{
+    position:absolute;width:527px;height:527px;
+    top:50%;left:50%;
+    margin-left:-263px;margin-top:-450px;
+    background:0 0}
+.m-page-role .cnt .rhombus .h1{
+  position:absolute;width:283px;height:67px;
+  background:url(../images/role/title_457b6de.png) no-repeat;top:192px;left:128px}
+.m-page-role .cnt .rhombus .h2{
+  position:absolute;top:277px;left:82px;
+  width:363px;height:26px;
+  background:url(../images/role/h2_caae3d5.png) no-repeat;}
+.m-page-role .cnt .rhombus .line{
+  position:absolute;top:326px;left:150px;
+  width:230px;height:8px;
+  background:url(../images/role/line_c8ea559.png) no-repeat;}
+.m-page-role .cnt .roleCnt .role-1{
+  background:url(../images/role/role1_f5f4856.png) no-repeat;right:337px}
+.m-page-role .cnt .roleCnt .role-2{
+  background:url(../images/role/role2_d76d54f.png) no-repeat;right:177px}
+.m-page-role .cnt .roleCnt .role-3{
+  background:url(../images/role/role3_0f52abf.png) no-repeat;right:18px}
+.m-page-role .cnt .roleCnt .role-4{
+  background:url(../images/role/role4_be2a6d1.png) no-repeat;left:18px}
+.m-page-role .cnt .roleCnt .role-5{
+  background:url(../images/role/role5_f31b586.png) no-repeat;left:177px}
+.m-page-role .cnt .roleCnt .role-6{
+  background:url(../images/role/role6_146b3a6.png) no-repeat;left:337px}}
+/*职业下面文字标题部分*/
+.m-page-role .cnt .roleCnt .role .roleName{
+  color:#fff;
+  position:absolute;bottom:-38px;
+  width:200px;text-align:center;font-size:20px}
+/*职业下面触摸会出来介绍部分*/
+.m-page-role .cnt .roleCnt .role .txt p{
+  position:absolute;top:10px}
+.m-page-role .cnt .roleCnt .role .txt{
+  position:absolute;bottom:-150px;
+  color:#fff;
+  font-size:16px;
+  width:220px;height:100px;
+  line-height:20px;
+  overflow:hidden;
+  border-top:1px solid rgba(255,255,255,.35)/*颜色*/
+}
+/*第四页:职业结束*/
+
+/*第五页:飞行开始.m-page-fly*/
+/*背景图片要适用屏幕,随着屏幕改变版心*/
+.m-page-fly .canvas .flyImg{
+  position:absolute;top:50%;left:50%;
+  min-width:100%;min-height:100%;
+  transform: translate(-50%, -50%);}
+/*绝对定位和left:50% top:50%都是用来防止排版混乱的问题*/
+.m-page-fly .cnt .btnsCnt{
+  position:absolute;left:50%;top:50%}
+/*注意展示模块在图片循环完成后从中间往两边移动的----------------------------------------*/
+/*左边飞行视频展示图片按钮*/
+.m-page-fly .cnt .btnsCnt .leftBtn{
+  position:absolute;top:60px;right:108px}
+/*右边翅膀展示的图片按钮*/
+.m-page-fly .cnt .btnsCnt .rightBtn{
+  position:absolute;bottom:60px;left:108px}
+/*图片的相同css*/
+.m-page-fly .cnt .btn{
+  position:absolute;
+  width:151px;height:151px;
+  margin-top:-75px;
+  margin-left:-75px;
+  cursor:pointer;
+  z-index:999}
+/*左边飞行视频展示图片*/
+.m-page-fly .cnt .btn-1{
+  background:url(../images/fly/btn1_ed18465.png) no-repeat;right:250px}
+/*右边翅膀视频展示图片*/
+.m-page-fly .cnt .btn-2{
+  background:url(../images/fly/btn2_90210ec.png) no-repeat;left:333px}
+/*展示图片旁边会移动的线:不会*/
+.m-page-fly .cnt .btn .border{
+  position:absolute;width:165px;height:165px;
+  background:url(../images/fly/border_d9e445e.png) no-repeat;margin-top:-7px;margin-left:-7px}
+.m-page-fly .cnt .btn .border1{
+  animation-name:borderAnimation;animation-duration:1s;animation-iteration-count:infinite;animation-delay:0s}
+.m-page-fly .cnt .btn .border2{
+  animation-name:borderAnimation;animation-duration:1s;animation-iteration-count:infinite;animation-delay:.3s}
+.m-page-fly .cnt .btn .border3{
+  animation-name:borderAnimation;animation-duration:1s;animation-iteration-count:infinite;animation-delay:.6s}
+@-webkit-keyframes borderAnimation{0%{opacity:1;transform:scale(1,1)}100%{opacity:0;transform:scale(1.3,1.3)}}
+/*transform:scale(1,1)表示以x轴的放大倍数|y表示Y轴的放大倍数*/
+/*展示图片右边的线最旁边的小圆圈*/
+.m-page-fly .cnt .miniPoint{
+  position:absolute;
+  width:3px;height:3px;
+  background:url(../images/fly/circle1_887d673.png) no-repeat}
+/*展示图片右边的线中间的线*/
+.m-page-fly .cnt .line{
+  position:absolute;top:1px;
+  width:220px;height:1px;
+  border-top:1px dashed #dbd2c7;}
+/*展示图片右边的线最旁边的大圆圈*/
+.m-page-fly .cnt .bigPoint{
+  position:absolute;
+  width:11px;height:11px;
+  background:url(../images/fly/circle2_51b44e0.png) no-repeat;margin-top:-5px}
+/*左边的线*/
+.m-page-fly .cnt .btnsCnt .leftBtn .line{margin-left:-220px}
+/*左边的圆圈*/
+.m-page-fly .cnt .btnsCnt .leftBtn .bigPoint{right:222px}
+/*右边的线*/
+.m-page-fly .cnt .btnsCnt .rightBtn .line{
+  transform: translateX(100%);
+}
+/*右边的圆圈*/
+.m-page-fly .cnt .btnsCnt .rightBtn .bigPoint{left:222px}
+/*左边展示图片下面的文字*/
+.m-page-fly .cnt .leftBtn .btnTxt{
+  width:122px;height:44px;
+  background:url(../images/fly/btn1txt_17a5864.png) no-repeat;position:absolute;right:263px;top:100px}
+/*右边下面的文字*/
+.m-page-fly .cnt .rightBtn .btnTxt{
+  width:123px;height:43px;
+  background:url(../images/fly/btn2txt_07db9ec.png) no-repeat;position:absolute;left:272px;top:100px}
+/*中间文字部分*/
+.m-page-fly .flyTitleCnt{
+  position:absolute;
+  width:100%;height:100%;
+  background:rgba(0,0,0,.6);display:none}
+/*具体文字:上部分*/
+.m-page-fly .cnt .flyTitle{
+  width:469px;height:123px;
+  background:url(../images/fly/title_0006e44.png) no-repeat;position:absolute;top:50%;left:50%;
+  margin-left:-234px;margin-top:-61px}
+/*具体文字:下部分:space点击会进行图片循环播放*/
+.m-page-fly .cnt .flyMouseCnt{
+  position:absolute;left:50%;top:50%;
+  width:200px;height:47px;
+  padding-top:47px;
+  background:url(../images/sprite_6008cf4.png) no-repeat -47px -515px;   margin-left:-100px;
+  cursor:pointer;
+  margin-top:200px}
+/*敲击空格文字*/
+.m-page-fly .cnt .flyMouseCnt .flyMouseTxt{
+  height:29px;margin-top:10px;
+  color:#fff;
+  text-align:center;
+  font-size:16px;}
+/*飞行视频的翅膀展示页面开始*/
+.white{
+  background: rgba(0,0,0,0);
+}
+.black{
+  background: rgba(0,0,0,.9);
+}
+.m-page-fly .cnt .displayCnt{
+  position:absolute;
+  width:100%;
+  height:100%;
+  /*z-index:999;*/
+}
+/*展示界面总体界面:包括飞行展示(主要是视频,但是不知道放不放),翅膀展示,选择按钮,关闭按钮*/
+.m-page-fly .cnt .displayCnt .wingCnt{
+  position:absolute;width:100%;height:100%;
+  /*background:rgba(0,0,0,.9)*/}
+/*翅膀展示界面:包括下面一排小翅膀,和上面显示的大翅膀*/
+.m-page-fly .cnt .displayCnt .wingCnt .cnt{
+  width:1200px;height:700px;
+  position:absolute;top:50%;left:50%;
+  margin-top:-350px;
+  margin-left:-600px;
+  background: rgba(0,0,0,.9)}
+/*大翅膀的定位:只显示一个翅膀*/
+.m-page-fly .cnt .displayCnt .wingCnt .wing{
+  position:absolute;
+  width:1293px;height:592px;
+  margin-left:-46px}
+.m-page-fly .cnt .displayCnt .wingCnt .wing1{
+  background:url(../images/fly/wing/big1_c4bacaa.png) no-repeat}
+.m-page-fly .cnt .displayCnt .wingCnt .wing2{
+  background:url(../images/fly/wing/big2_261af58.png) no-repeat}
+.m-page-fly .cnt .displayCnt .wingCnt .wing3{
+  background:url(../images/fly/wing/big3_3236c35.png) no-repeat}
+.m-page-fly .cnt .displayCnt .wingCnt .wing4{
+  background:url(../images/fly/wing/big4_70d491e.png) no-repeat}
+.m-page-fly .cnt .displayCnt .wingCnt .wing5{
+  background:url(../images/fly/wing/big5_d50569a.png) no-repeat}
+.m-page-fly .cnt .displayCnt .wingCnt .wing6{
+  background:url(../images/fly/wing/big6_b69fdb3.png) no-repeat}
+/*小翅膀的定位*/
+.m-page-fly .cnt .displayCnt .wingCnt .small{
+  position:absolute;bottom:36px;left:70px}
+/*小翅膀用ul的所有需要浮动*/
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw{
+  width:180px;height:98px;
+  background:url(../images/fly/wing/btnsprite_5ddb438.png) no-repeat; float:left;
+  cursor:pointer;
+  position:relative}
+/*小翅膀是一张图片上面的需要对图片显示的位置进行判断*/
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw1{background-position:-20px 0}
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw2{background-position:-210px 0}
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw3{background-position:-400px 0}
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw4{background-position:-580px 0}
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw5{background-position:-770px 0}
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw6{background-position:-960px 0}
+/*小翅膀上面数字的样式*/
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw .swNum{
+  position:absolute;
+  width:180px;
+  text-align:center;
+  color:#fff}
+/*小翅膀的下面文字的样式*/
+.m-page-fly .cnt .displayCnt .wingCnt .small .sw .swName{
+  position:absolute;bottom:-10px;
+  width:180px;
+  text-align:center;
+  color:#fff;}
+/*小翅膀下面文字的线*/
+.m-page-fly .cnt .displayCnt .wingCnt .swLine{
+  width:34px;height:1px;
+  background:#fff;
+  position:absolute;bottom:-20px;left:50%;
+  margin-left:-17px}
+/*关闭按钮的位置*/
+.m-page-fly .cnt .displayCnt .closeBtn{
+  width:55px;height:55px;
+  position:absolute;top:40px;right:40px;
+  z-index:999;
+  background:url(../images/closeBtn_678102b.png) no-repeat;
+  cursor:pointer;
+  transition: all .2s ease-in-out;}
+/*视频样式设置*/
+.m-page-fly .cnt .displayCnt .flyCnt{
+  position:absolute;left:100%;
+  width:100%;height:100%;
+  background:rgba(0,0,0,.9);}
+/*视频的样式设置*/
+/*.m-page-fly .cnt .displayCnt .flyCnt .flyVideo{*/
+  /*width:1000px;height:600px;*/
+  /*background:#000;*/
+  /*position:absolute;top:50%;left:50%;*/
+  /*margin-top:-300px;margin-left:-500px;*/
+  /*font-size:50px;color:#000;*/
+  /*text-align:center;*/
+  /*line-height:600px}*/
+
+/*显示在小翅膀下面可以选择的按钮*/
+.m-page-fly .detailNavCnt{
+  position:absolute;bottom:40px;left:50%;
+  width:206px;height:29px;
+  background:#fff;
+  border-radius:50px;
+  margin-left:-103px;
+  cursor:pointer}
+/*按钮的相同样式*/
+.m-page-fly .detailNavCnt .tabBtn,
+.m-page-fly .detailNavCnt .slideBg{
+  width:100px;height:25px;
+  border-radius:50px;
+  display:block;
+  position:absolute;top:2px;
+  text-align:center;
+  color:#998867;
+  font-size:16px;
+  font-weight:700;
+  line-height:25px;}
+/*活动框颜色*/
+.m-page-fly .detailNavCnt .tabBtn.active{color:#fff}
+.m-page-fly .detailNavCnt .slideBg{background:#998867;left:3px}
+.m-page-fly .detailNavCnt .tabBtn-1{left:3px}
+.m-page-fly .detailNavCnt .tabBtn-2{left:103px}
+/*第五页:飞行结束*/
+
+
+/*第六页:战斗开始*/
+/*战斗的首页背景*/
+.m-page-fighting{
+  background:url(../images/fighting/bg_d4b4f14.jpg) no-repeat center center;
+  background-size:cover}
+/*背景动图*/
+.m-page-fighting .fightVideo video{
+  position:absolute;top:50%;left:50%;
+  min-width:100%;min-height:100%;
+  transform: translate(-50%,-50%);
+}
+.m-page-fighting .videoBlack{
+  position:absolute;
+  width:100%;height:100%;
+  background:url(../images/role/black_ff2213a.png)}
+/*中间文字部分:是谁给你的勇气,梁静茹吗*/
+.m-page-fighting .fighttingTitle{
+  position:absolute;left:50%;top:140px;
+  width:525px;height:123px;
+  background:url(../images/fighting/title_968fa6e.png) no-repeat;   margin-left:-262px;}
+/*中间标题部分左边4个盒子,右边三个盒子,应该有个旋转的效果需要研究一下*/
+/*div*/
+/*{*/
+  /*transform:rotate(7deg);*/
+  /*-ms-transform:rotate(7deg); 	!* IE 9 *!*/
+  /*-moz-transform:rotate(7deg); 	!* Firefox *!*/
+  /*-webkit-transform:rotate(7deg); !* Safari 和 Chrome *!*/
+  /*-o-transform:rotate(7deg); 	!* Opera *!*/
+/*}*/
+.m-page-fighting .fightingNav{
+  position:absolute;top:50%;left:50%}
+/*左边四个标题盒子的统一相同样式*/
+.m-page-fighting .fightLeft{
+  position:absolute;left:-234px}
+/*中间盒子里面的pvp和pve:有转换为大写uppcase*/
+.m-page-fighting .fightName{
+  position:absolute;
+  font-size:30px;
+  color:#fff;
+  font-family:"Trajan Pro";
+  position:absolute;
+  margin-left:-27px;
+  margin-top:-17px;
+  text-transform:uppercase}
+/*中间盒子的统一相同样式,应该有旋转transform吗?*/
+.m-page-fighting .bigBorder{
+  width:180px;height:180px;
+  border:1px solid #adaaa9;
+  margin-top:-90px;margin-left:-90px;
+  position:absolute;
+  -webkit-transform:rotate(-45deg);
+}
+/*盒子的统一相同样式,应该有旋转transform吗?*/
+.m-page-fighting .box{
+  position:absolute;
+  display:none;
+  overflow:hidden;
+  cursor:pointer;
+  width:180px;height:180px;
+  border:1px solid #adaaa9;
+  margin-top:-90px;margin-left:-90px;
+  -webkit-transform:rotate(-45deg);
+}
+/*盒子的四个边因为要一一种方式叠在一起有的边是没有的*/
+.m-page-fighting .fightLeft .box1{border-bottom:0}
+.m-page-fighting .fightLeft .box2{border-top:0}
+.m-page-fighting .fightLeft .box3{border-right:0}
+.m-page-fighting .fightRight .box1{border-left:0}
+.m-page-fighting .fightRight .box2{border-top:0}
+/*旁边盒子的文本:是图片*/
+.m-page-fighting .txt{
+  margin-top:77px;margin-left:24px;
+  position:absolute;
+  position:absolute;
+  width:132px;height:26px;
+  -webkit-transform:rotate(45deg);
+}
+/*具体的每个盒子的文本内容样式和位置都是图片*/
+.m-page-fighting .fightLeft .box1 .txt{
+  background:url(../images/fighting/txt1_1716975.png) no-repeat center center}
+.m-page-fighting .fightLeft .box2 .txt{
+  background:url(../images/fighting/txt2_76d1fdb.png) no-repeat center center;
+  width:139px;height:27px}
+.m-page-fighting .fightLeft .box3 .txt{
+  background:url(../images/fighting/txt3_65ac2da.png) no-repeat center center}
+.m-page-fighting .fightRight .box1 .txt{
+  background:url(../images/fighting/txt4_33bd900.png) no-repeat center center;
+  width:168px;height:27px;
+  margin-left:9px}
+.m-page-fighting .fightRight .box2 .txt{
+  background:url(../images/fighting/txt5_dc6bf8b.png) no-repeat center center}
+/*右边的统一样式*/
+.m-page-fighting .fightRight{position:absolute;left:234px}
+/*中间盒子的样式*/
+.m-page-fighting .bigBorder.bigBorder1{left:-7px}
+.m-page-fighting .bigBorder.bigBorder2{left:7px}
+/*旁边盒子的图片*/
+.m-page-fighting .boxImg{
+  position:absolute;margin-top:-37px;margin-left:-37px;
+  background:url(../images/fighting/1_9ae295d.jpg) no-repeat;width:255px;height:255px;
+  -webkit-transform:rotate(45deg);
+}
+.m-page-fighting .fightLeft .box1 .boxImg{
+  background:url(../images/fighting/1_9ae295d.jpg) no-repeat}
+.m-page-fighting .fightLeft .box2 .boxImg{
+  background:url(../images/fighting/2_0473f88.jpg) no-repeat}
+.m-page-fighting .fightLeft .box3 .boxImg{
+  background:url(../images/fighting/3_465edda.jpg) no-repeat}
+.m-page-fighting .fightRight .box1 .boxImg{
+  background:url(../images/fighting/4_73ab216.jpg) no-repeat}
+.m-page-fighting .fightRight .box2 .boxImg{
+  background:url(../images/fighting/5_2fdf4ae.jpg) no-repeat}
+/*点击盒子出来的页面*/
+.m-page-fighting .fightDetailCnt{
+  position:absolute;width:100%;height:100%;z-index:9999}
+/*页面分五个部分分别是:团队配合,极限操作,多重挑战,千人领地战,帝国战争按照1,2,3,4,5排列*/
+.m-page-fighting .fightDetailCnt .detailItem{
+  position:absolute;
+  width:100%;height:100%;
+  background:#000}
+/*团队配合*/
+.m-page-fighting .fightDetailCnt .detailItem-1{
+  background:url(../images/fighting/detail/1_a3ddc69.jpg) no-repeat center center;
+  background-size:cover}
+.m-page-fighting .fightDetailCnt .detailItem-1 .title{
+  position:absolute;width:424px;height:126px;
+  background:url(../images/fighting/detail/txt1_5ea3d0f.png) no-repeat;margin-top:-63px;margin-left:-212px;left:50%;bottom:120px}
+/*极限操作*/
+.m-page-fighting .fightDetailCnt .detailItem-2{
+  background:rgba(0,0,0,.9)}
+.m-page-fighting .fightDetailCnt .detailItem-2 .title{
+  position:absolute;left:50%;top:138px;
+  width:381px;height:121px;
+  background:url(../images/fighting/detail/txt2_85ae29d.png) no-repeat;margin-top:-60px;margin-left:-190px;}
+/*多重挑战*/
+.m-page-fighting .fightDetailCnt .detailItem-3{}
+/*千人领地战*/
+.m-page-fighting .fightDetailCnt .detailItem-4{
+  background:rgba(0,0,0,.9)}
+.m-page-fighting .fightDetailCnt .detailItem-4 .title{
+  position:absolute;left:50%;top:138px;
+  width:523px;height:121px;
+  background:url(../images/fighting/detail/txt4_42f1d68.png) no-repeat;margin-top:-60px;margin-left:-261px;}
+/*帝国战争*/
+.m-page-fighting .fightDetailCnt .detailItem-5{
+  background:rgba(0,0,0,.9);
+  background-size:cover}
+.m-page-fighting .fightDetailCnt .detailItem-5 .title{
+  position:absolute;left:50%;top:138px;
+  width:683px;height:126px;
+  background:url(../images/fighting/detail/txt5_ccafd5c.png) no-repeat center top;
+  margin-top:-63px;margin-left:-341px;}
+/*关闭跳出来的页面的按钮*/
+.m-page-fighting .fightDetailCnt .closeBtn{
+  width:55px;height:55px;
+  position:absolute;top:40px;right:40px;
+  z-index:999;
+  background:url(../images/closeBtn_678102b.png) no-repeat;
+  cursor:pointer;
+  transition: all .2s ease-in-out;}
+/*多重挑战的大内容模块*/
+.m-page-fighting .item{
+  width:100%;height:100%;
+  position:absolute;
+  background-size:cover}
+.m-page-fighting .item1{
+  background:url(../images/fighting/items/bg1_6e6ffb2.jpg) no-repeat center center;
+  background-size:cover}
+.m-page-fighting .item2{
+  background:url(../images/fighting/items/bg2_d9aeb54.jpg) no-repeat center center;
+  background-size:cover}
+.m-page-fighting .item3{
+  background:url(../images/fighting/items/bg3_45f4d77.jpg) no-repeat center center;
+  background-size:cover}
+.m-page-fighting .item4{
+  background:url(../images/fighting/items/bg4_cd0a1b0.jpg) no-repeat center center;
+  background-size:cover}
+/*多重挑战的小内容图片模块*/
+.m-page-fighting .thumbCnt{
+  width:944px;height:395px;
+  position:absolute;top:50%;left:50%;
+  margin-left:-472px;
+  margin-top:-188px}
+.m-page-fighting .thumbCnt ul{position:absolute;bottom:0}
+.m-page-fighting .thumbCnt li{
+  float:left;
+  width:234px;height:131px;
+  margin-right:2px;
+  cursor:pointer}
+/*多重挑战四个模块的选择按钮,触摸会在上面显示模块具体内容*/
+.m-page-fighting .thumbCnt .img,
+.m-page-fighting .thumbCnt .imgHover{
+  width:234px;height:123px;
+  display:block}
+.m-page-fighting .thumbCnt .thumb-1 .img{
+  background:url(../images/fighting/items/thumb_hover1_463d0c9.jpg) no-repeat}
+.m-page-fighting .thumbCnt .thumb-1 .imgHover{
+  background:rgba(0,0,0,.6)}
+.m-page-fighting .thumbCnt .thumb-2 .img{
+  background:url(../images/fighting/items/thumb_hover2_b7047a0.jpg) no-repeat}
+.m-page-fighting .thumbCnt .thumb-2 .imgHover{
+  background:rgba(0,0,0,.6)}
+.m-page-fighting .thumbCnt .thumb-3 .img
+{background:url(../images/fighting/items/thumb_hover3_b3131e0.jpg) no-repeat}
+.m-page-fighting .thumbCnt .thumb-3 .imgHover{
+  background:rgba(0,0,0,.6)}
+.m-page-fighting .thumbCnt .thumb-4 .img{
+  background:url(../images/fighting/items/thumb_hover4_e829739.jpg) no-repeat}
+.m-page-fighting .thumbCnt .thumb-4 .imgHover{
+  background:rgba(0,0,0,.6)}
+/*多重挑战里面有四个模块的具体文字*/
+.m-page-fighting .detailTitle{
+  margin-left:-354px;left:50%}
+.m-page-fighting .detailTitle1{
+  background:url(../images/fighting/items/txt1_6688ade.png) no-repeat center top;
+  width:708px;height:194px;
+  position:absolute}
+.m-page-fighting .detailTitle2{
+  background:url(../images/fighting/items/txt2_0e053cd.png) no-repeat center top;
+  width:708px;height:194px;
+  position:absolute;
+  opacity:0}
+.m-page-fighting .detailTitle3{
+  background:url(../images/fighting/items/txt3_26e4f9d.png) no-repeat center top;
+  width:708px;height:194px;
+  position:absolute;
+  opacity:0}
+.m-page-fighting .detailTitle4{
+  background:url(../images/fighting/items/txt4_b423d8f.png) no-repeat center top;
+  width:708px;height:194px;
+  position:absolute;
+  opacity:0}
+/*跳出来页面下面的按钮部分*/
+.m-page-fighting .detailNavCnt{
+  position:absolute;
+  width:506px;height:29px;
+  background:#fff;
+  bottom:50px;
+  border-radius:50px;
+  margin-left:-253px;
+  cursor:pointer}
+/*视频应该是不要了*/
+.m-page-fighting .detailVideoCnt{
+  width:960px;height:560px;
+  background:#000;
+  position:absolute;top:50%;left:50%;
+  margin-top:-240px;margin-left:-480px;
+  font-size:50px;
+  color:#000;
+  text-align:center;line-height:600px}
+.m-page-fighting .detailItem-5 .detailVideoCnt{
+  background:url(../images/fighting/coming_65b4bc9.jpg) no-repeat center top}
+/*大的按钮和里面的五个小按钮*/
+.m-page-fighting .detailNavCnt .tabBtn,
+.m-page-fighting .detailNavCnt .slideBg{
+  width:100px;height:25px;
+  border-radius:50px;
+  display:block;
+  position:absolute;top:2px;
+  text-align:center;
+  color:#998867;
+  font: 700 16px/25px '微软雅黑';}
+.m-page-fighting .detailNavCnt .tabBtn.active{color:#fff}
+.m-page-fighting .detailNavCnt .slideBg{background:#998867;left:3px}
+.m-page-fighting .detailNavCnt .tabBtn-1{left:3px}
+.m-page-fighting .detailNavCnt .tabBtn-2{left:103px}
+.m-page-fighting .detailNavCnt .tabBtn-3{left:203px}
+.m-page-fighting .detailNavCnt .tabBtn-4{left:303px}
+.m-page-fighting .detailNavCnt .tabBtn-5{left:403px}
+/*第六页:战斗结束*/
+
+/*第七页:家园开始*/
+/*家园背景*/
+.m-page-xiuxian .bg{
+  width:100%;height:100%;
+  -webkit-transition:all .5s;
+  transition:all .5s}
+/*三个背景图片点击右侧会出现对应的背景图片*/
+.m-page-xiuxian .bg-1
+{background:url(../images/xiuxian/bg-1_73a8580.jpg) no-repeat center center;
+  background-size:cover}
+.m-page-xiuxian .bg-2{
+  background:url(../images/xiuxian/bg-2_9df8dc3.jpg) no-repeat center center;
+  background-size:cover}
+.m-page-xiuxian .bg-3{
+  background:url(../images/xiuxian/bg-3_db708bf.jpg) no-repeat center center;
+  background-size:cover}
+/*右边三个按钮*/
+.m-page-xiuxian .btnList{
+  position:absolute;top:50%;right:85px}
+.m-page-xiuxian .btn{
+  width:236px;height:100px;
+  display:block;
+  background:#a67d5c;
+  position:absolute;right:0;
+  margin-left:-236px;
+  -webkit-transition:all .5s;transition:all .5s}
+/*鼠标触摸会有移除的效果*/
+.m-page-xiuxian .btn:hover,.m-page-xiuxian .btn.active{
+  background:#51558e;width:366px}
+.m-page-xiuxian .btn .icon{display:block;width:100%;height:100%}
+.m-page-xiuxian .btn .num{
+  display:block;
+  width:100%;height:100%;
+  position:absolute;left:0;top:0;
+  -webkit-transition:all .5s;
+  opacity:0}
+.m-page-xiuxian .btn:hover .num,
+.m-page-xiuxian .btn.active .num{opacity:1}
+.m-page-xiuxian .btn-1{bottom:82px}
+/*右边按钮的图片和样式num是数字隐藏在后面*/
+.m-page-xiuxian .btn-1 .icon{
+  background:url(../images/xiuxian/btn-1-default_0c6060c.png) no-repeat 14px center}
+.m-page-xiuxian .btn-1 .num{
+  background:url(../images/xiuxian/01_d53aaaf.png) no-repeat 228px center}
+.m-page-xiuxian .btn-2{top:0;margin-top:-50px}
+.m-page-xiuxian .btn-2 .icon{
+  background:url(../images/xiuxian/btn-2-default_46760cc.png) no-repeat 12px center}
+.m-page-xiuxian .btn-2 .num{
+  background:url(../images/xiuxian/02_5d3bc08.png) no-repeat 228px center}
+.m-page-xiuxian .btn-3{top:82px}
+.m-page-xiuxian .btn-3 .icon{
+  background:url(../images/xiuxian/btn-3-default_4dc5462.png) no-repeat 28px center}
+.m-page-xiuxian .btn-3 .num{
+  background:url(../images/xiuxian/03_3405682.png) no-repeat 228px center;}
+/*可以播放视频的按钮*/
+.m-page-xiuxian .videoBtnCnt{
+  position:absolute;top:47px;bottom:47px;
+  background:rgba(0,0,0,.74);
+  width:384px;left:342px}
+/*文字部分:安居*/
+.m-page-xiuxian .title{
+  width:251px;height:126px;
+  background:url(../images/xiuxian/title_18f7424.png) no-repeat;margin-left:-125px;
+  position:absolute;top:183px;left:50%;}
+/*视频播放按钮:包括图片和中间的精灵图*/
+.m-page-xiuxian .videoBtn{
+  width:306px;height:306px;
+  background:url(../images/xiuxian/videoBtn_4368de4.png) no-repeat;
+  display:block;
+  margin-left:-153px;
+  position:absolute;top:375px;left:50%;}
+/*第七页:家园结束*/
+
+/*第八页:帮会开始*/
+/*白色的背景图片*/
+.m-page-faction .white{
+  width:100%;height:100%;
+  background:url(../images/life/white_bdc8d69.png) no-repeat center center;
+  background-size:cover;
+  position:absolute}
+/*左边文字和按钮部分*/
+.m-page-faction .factionCnt{
+  width:608px;height:446px;
+  position:absolute;top:50%;left:25%;
+  margin-left:-304px;margin-top:-223px}
+/*文字部分*/
+.m-page-faction .title{
+  width:608px;height:102px;
+  background:url(../images/life/title_bbe80b0.png) no-repeat center top}
+/*点击可以播放视频的图片*/
+.m-page-faction .factionVideo{
+  width:608px;height:306px;
+  background:url(../images/life/videoBtn_b5a26b1.jpg) no-repeat;margin-top:50px;
+  cursor:pointer;
+  position:relative}
+/*按钮精灵图*/
+.m-page-faction .factionVideo .videoIcon{
+  width:84px;height:84px;
+  background:url(../images/sprite_6008cf4.png) no-repeat -47px -30px;
+  display:block;
+  margin-left:-42px;margin-top:-42px;
+  left:50%;top:50%;position:absolute}
+/*触摸更改精灵图位置*/
+.m-page-faction .factionVideo:hover .videoIcon{
+  background-position:-47px -126px}
+/*右边的背景图片和设置*/
+.m-page-faction .factionVideoCnt{
+  width:60%;height:100%;
+  position:absolute;left:40%;
+  background:url(../images/life/bg_ff9ad95.jpg) no-repeat right center;
+  background-size:cover}
+.m-page-faction .factionVideoCnt video{
+  position:absolute;top:50%;left:50%;
+  min-width:100%;min-height:100%;
+  transform:translate(-50%,-50%);}
+/*第八页:帮会结束*/
+
+/*第九页:形象开始*/
+/*左边背景图片*/
+.m-page-figure .figureLeftPart{
+  width:50%;height:100%;
+  background:url(../images/figure/bg1_591fe21.jpg);
+  position: absolute;
+}
+/*左边文字部分整体*/
+.m-page-figure .figureLeftPart .figureVideoCnt{
+  width:608px;height:464px;
+  position:absolute;top:50%;right:50%;
+  margin-top:-150px;
+  margin-right:-304px;
+}
+/*左边文字部分的文字*/
+.m-page-figure .figureLeftPart .figureTitle{
+  width:608px;height:101px;
+  background: url(../images/figure/title_e19110d.png) no-repeat center top;
+}
+/*左边文字部分下面图片*/
+.m-page-figure .figureLeftPart .figureVideoBtn{
+  width:608px;height:306px;
+  background:url(../images/figure/videoBtn_376c115.jpg) no-repeat;
+  margin-top:37px;
+  cursor:pointer;position:relative;}
+/*精灵图按钮*/
+.m-page-figure .figureLeftPart .figureVideoBtn .videoIcon{
+  width:84px;height:84px;
+  background:url(../images/sprite_6008cf4.png) no-repeat -47px -30px;
+  display:block;
+  margin-left:-42px;margin-top:-42px;
+  position:absolute;left:50%;top:50%;}
+/*鼠标触摸到图片修改精灵图位置*/
+.m-page-figure .figureLeftPart .figureVideoBtn:hover .videoIcon{
+  background-position:-47px -126px}
+/*右边的整体背景*/
+.m-page-figure .figureRightPart{
+  width:50%;height:100%;
+  background: #edf4f3;
+  position:absolute;left:50%;
+  background-size:cover;
+}
+/*右边大圆的样式*/
+.m-page-figure .figureRightPart .circle{
+  width:539px;height:539px;
+  background:url(../images/figure/img/circle_28468a0.png);
+  margin-top: -269px;margin-left:-269px;
+  position:absolute;left:50%;top:50%;
+}
+/*大圆里面的内容*/
+.m-page-figure .figureRightPart .circle .img{
+  width:479px;height:479px;
+  margin-top: -239px;margin-left:-239px;
+  position:absolute;top:50%;left:50%;
+}
+/*里面的三张图片*/
+.m-page-figure .figureRightPart .circle .img-1{
+  background:url(../images/figure/img/1_3963e54.png);
+}
+.m-page-figure .figureRightPart .circle .img-2{
+  background:url(../images/figure/img/2_fb787eb.png);
+}
+.m-page-figure .figureRightPart .circle .img-3{
+  background:url(../images/figure/img/3_c75ed4b.png);
+}
+.m-page-figure .figureRightPart .circle .btn{
+  color:#998867;
+  display:inline-block;
+  height:18px;
+  font: 12px/18px '宋体';
+  padding-left:26px;
+  background:url(../images/figure/img/c_b5c88c5.png) no-repeat;position:absolute;width:100px}
+.m-page-figure .figureRightPart .circle .btn.active{
+  background:url(../images/figure/img/cactive_cd79e16.png) no-repeat}
+.m-page-figure .figureRightPart .circle .btn-1{top:164px;left:513px}
+.m-page-figure .figureRightPart .circle .btn-2{top:254px;left:530px}
+.m-page-figure .figureRightPart .circle .btn-3{top:356px;left:513px}
+/*第九页:形象结束*/
+
+/*统一样式*/
+/*触摸旋转90度*/
+.m-page-fighting .fightDetailCnt .closeBtn:hover,
+.m-page-fly .cnt .displayCnt .closeBtn:hover,
+.m-videoMask .globalVideoCnt .closeBtn:hover,
+.m-page-map .mapDetailCnt .closeBtn:hover{-webkit-transform:rotate(90deg);}
+

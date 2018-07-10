@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="base.css">
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #f6f3ec;
+    }
+    .page {
+      width: 100%;
+      height: 100%;
+      min-width: 1280px;
+      max-width: 1920px;
+      max-height: 1080px;
+      position: relative;
+      margin: 0 auto;
+      overflow: hidden;
+      font-size: 14px;
+    }
+
+    .history-front{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      /*display: none;*/
+      overflow: hidden;
+    }
+
+
+
+
+    .logo{
+
+      display: block;
+      width: 181px;
+      height: 91px;
+      background: url(https://tianyu.res.netease.com/pc/zt/20170417140327/logo_db79550.png);
+      position: absolute;
+      left: 20px;
+      top: 20px;
+    }
+    .img-left{
+      width: 1920px;
+      height: 1080px;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      margin-left: -960px;
+      margin-top: -540px;
+    }
+
+    .img-right{
+      width: 1920px;
+      height: 1080px;
+      position: absolute;
+      left: -1%;
+      top: 5%;
+      margin-left: -960px;
+      margin-top: -540px;
+    }
+
+    .img{
+
+      width: 1920px;
+      height: 1080px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+
+    }
+
+    .guan{
+      background: url(https://tianyu.res.netease.com/pc/zt/20170417140327/character-content-bg_447a548.png);
+      width: 487px;
+      height: 592px;
+      /*background-color: #0000FF;*/
+      position: absolute;
+      left: 65%;
+      top: 7%;
+      font-size: 14px;
+      line-height: 22px;
+      color: #fff;
+    }
+    .heading{
+      height: 190px;
+      width: 180px;
+      position: absolute;
+      left:38%;
+      top:-11%;
+    }
+    .content{
+      position: absolute;
+      left: 130px;
+      top: 150px;
+      width: 305px;
+    }
+    .basic{
+      position: relative;
+      padding-bottom: 10px;
+    }
+    .guan .content .basic strong{
+
+      font-size: 16px;
+      font-weight: 400;
+      position: absolute;
+      left: -76px;
+      top: 0;
+    }
+    .nav-1{
+      width: 100%;
+      height: 60px;
+      background: #f6f3ec;
+      /*background-color: #0000FF;*/
+      position: absolute;
+      top:93%;
+      left:0;
+      padding-top: 15px;
+      overflow: hidden;
+    }
+    .nav-1 ul{
+      margin-left: 265px;
+    }
+    .nav-1 ul li{
+      float: left;
+
+    }
+    .nav-1 ul li a{
+      padding-left: 64px;
+      color: #977f4b;
+    }
+    .log-right{
+      height: 50px;
+      width: 240px;
+      /*background-color: red;*/
+      position: absolute;
+      top: 35px;
+      right: 40px;
+
+    }
+    .log-right ul{
+      line-height:50px;
+
+    }
+
+    .log-right ul li .tu{
+      background-image: url(https://tianyu.res.netease.com/pc/zt/20170417140327/icon1_c2d0b94.png);
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      float: left;
+      margin-top: 15px;
+    }
+    .log-right ul li .tu1{
+      background-image: url(https://tianyu.res.netease.com/pc/zt/20170417140327/icon2_a9d2bd6.png);
+      display: inline-block;
+      width: 15px;
+      height: 16px;
+      float: left;;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    .log-right ul li .tu2{
+      background-image: url(https://tianyu.res.netease.com/pc/zt/20170417140327/icon3_984cd36.png);
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      float: left;;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    .yuan{
+      float: left;
+      display: block;
+      width: 40px;
+      height: 40px;
+      border: 2px solid #977f4b;
+      border-radius: 100%;
+      position: relative;
+      margin-left: 20px;
+
+    }
+
+    .san {
+      display: block;
+      width: 0;
+      height: 0;
+      border-width: 6px 8px;
+      border-color: transparent transparent transparent #977f4b;
+      border-style: solid;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -4px;
+      margin-top: -6px;
+
+    }
+
+    .music{
+      display: inline-block;
+      float: right;
+
+      color: #977f4b;
+    }
+    .video--main{
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  </style>
+</head>
+<body>
+<div class='page'>
+  <div class='f1'>
+      <div class='history-front'>
+    <div class='video'>
+      <video src="http://v.tianyu.netease.com/2017/0417/character-6.mp4" class="video--main" autoplay></video>
+    </div>
+    <div class='img'>
+
+      <img src="https://tianyu.res.netease.com/pc/zt/20170417140327/character-bg6_0902db5.png" class="img-left">
+    </div>
+    <div class="guan">
+      <img src="https://tianyu.res.netease.com/pc/zt/20170417140327/character-heading6_25a3a4c.png"  class="heading">
+      <ul class="content">
+        <li class="basic">
+          <strong>【生辰】</strong>
+
+          <p>云垂历1373年9月18日</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【年龄】</strong>
+
+          <p>27</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【种族】</strong>
+
+          <p>人类</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【外貌】</strong>
+
+          <p>梳理整齐的长发，高挑的身材，精致的面孔，是云垂少年心中的“神仙姐姐”。</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【身份】</strong>
+
+          <p>玄水教祭司</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【亲属】</strong>
+
+          <p>妹妹瞳洸</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【好友】</strong>
+
+          <p>汐风、辰钧</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【武器】</strong>
+
+          <p>静默之杖</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【神器】</strong>
+
+          <p>黑曜石之镜</p>
+
+        </li>
+
+        <li class="basic">
+          <strong>【绝招】</strong>
+
+          <p>幽夜·漩流之天葬</p>
+
+        </li>
+
+
+
+      </ul>
+
+
+    </div>
+  </div>
+      <div class='logo'></div>
+      <div class='log-right'>
+    <ul>
+      <li><a href="http://tianyu.163.com/index.html" target='_blank' class='tu' title='进入官网'></a></li>
+      <li><a href="http://tianyu.163.com/download/" target="_blank" class='tu1' title="前往下载"></a></li>
+      <li><a href="http://tianyu.163.com/download/" target="_blank" class='tu2' title="分享"></a></li>
+      <li><a  class="" title="播放音乐">
+        <strong class="yuan">
+          <i class="san"></i>
+        </strong>
+        <strong class="music">MUSIC OFF</strong>
+      </a></li>
+    </ul>
+  </div>
+      <div class='nav-1'>
+    <ul>
+      <li><a href="">首页</a></li>
+      <li><a href="">世界起源</a></li>
+      <li><a href="">人物志</a></li>
+      <li><a href="">世界地理</a></li>
+      <li><a href="">世界种族</a></li>
+      <li><a href="">云垂帝国志</a></li>
+      <li><a href="">世界关系</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
+</body>
+</html>

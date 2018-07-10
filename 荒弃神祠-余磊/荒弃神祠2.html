@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+   @-webkit-keyframes fadeInOut {
+    0% {
+      opacity:1;
+  }
+    25% {
+      opacity:0;
+  }
+    50% {
+      opacity: 0;
+  }
+    75% {
+      opacity:1;
+  }
+  }
+ 
+  
+  </style>
+  <link rel="stylesheet" href="index-2.css">
+</head>
+<body>
+<!--背景-->
+<div class='var'>
+	 <div class="logo">
+    <img src="images/logo_74f662d.png" alt="">
+  	</div>
+  	<div class="transcript">
+    <!--右上副本角图片开头 -->
+    <a href="../副本首页-王学忠/tianyu.html" title="副本汇总" id="spring3"></a>
+    <a href="#" title="全屏展示" id="spring1"></a>
+    <a href="#" title="播放音乐" id="spring2"></a>
+    <!-- 图片 -->
+    <img id="box" class="images" src="images/music--off_a95904b.png" alt="" href="#">
+    </div>
+   
+    <a href="荒弃神祠5.html"><div id="tu1">
+    	<img src="images/yanmo_159f811.png" alt="">
+      </div>
+    </a>
+
+    <a href="荒弃神祠4.html"><div id="tu2">
+    	<img src="images/kaibuli_88e6537.png" alt=""  >
+      </div>
+
+    </a>
+    <a href="荒弃神祠6.html"><div id="tu3">
+    	<img src="images/mudeng_4f4f23f.png" alt="">
+      </div>
+    </a>
+
+    <a href="荒弃神祠3.html"><div id="tu4">
+    <img src="images/xiaoguai_79a2b79.png" alt="" >
+    </div>
+    </a>
+
+    <a href="荒弃神祠3.html">
+    <div class="skill1"><img src="images/boss1-logo_9ecf470.png" alt=""></div>
+    </a>
+
+    <a href="荒弃神祠4.html">
+    <div class="skill2"><img src="images/boss2-logo_ae6d6a5.png" alt=""></div>
+    </a>
+
+    <a href="荒弃神祠6.html">
+    <div class="skill3"><img src="images/boss3-logo_f6db746.png" alt=""></div>
+
+    </a>
+    <a href="荒弃神祠5.html"><div class="skill4"><img src="images/boss4-logo_cd1d5f0.png" alt=""></div>
+    </a>
+<!-- ===================================== -->
+<div class="wire-1"></div>
+<div class="wire-2"></div>
+<div class="wire-3"></div>
+<div class="wire-4"></div>
+
+
+   <!-- 轮播图     -->
+
+    <div class="all" id='box'>
+        <div class="screen" id="screen">
+            <ul>
+                <li>
+                    <img src="images/xiaoguai_79a2b79.png" width="500" height="260" />
+                </li>
+                <li>
+                    <img src="images/kaibuli_88e6537.png" width="500" height="260" />
+                </li>
+                <li>
+                    <img src="images/mudeng_4f4f23f.png" width="500" height="260" />
+                </li>
+                <li>
+                    <img src="images/yanmo_159f811.png" width="500" height="260" />
+                </li>
+                
+            </ul>
+            <ol>
+            </ol>
+        </div>
+        <div id="arr">
+            <span id="left">&lt;</span>
+            <span id="right">&gt;</span>
+        </div>
+    </div>
+
+
+    <script src="animate.js"></script>
+    <script>
+        //0. 获取元素
+        var box = document.getElementById('box');
+        var screen = document.getElementById('screen');
+        var ul = screen.getElementsByTagName('ul')[0];
+        var lis = ul.getElementsByTagName('li');
+        var ol = screen.children[1];
+        var arr = document.getElementById('arr');
+        var right = document.getElementById('right');
+        var left = document.getElementById('left');
+        var indexGlobal = 0; //用于记录当前展示的是第几张
+        
+        // 1. 根据ul中图片的个数,动态的生成ol中的li
+//        1.1 获取到ul中li的个数  lis.length
+//        1.2 根据lis.length,动态创建ol中的li
+        for(var i = 0; i < lis.length; i++) {
+            var li = document.createElement('li');
+              // 保存每一个li自己的下标
+              li.setAttribute('index', i);
+            li.innerText = i + 1; //给每一个数字添加文本
+              // 1.3  打开页面,默认展示第一张图片,所以数字1应该默认高亮
+              if(i == 0){
+                  li.className = 'current';
+              }
+            ol.appendChild(li);
+              
+              //2. 点击ol中的li,展示对应的图片
+//            2.1 给ol中每一个li注册点击事件
+              li.onclick = liClick;
+              
+              //底层
+//              对应的li.onclick()
+         }
+        
+         //为了实现无缝轮播效果,将第一张复制一份,添加到ul的最后面
+        var newli = lis[0].cloneNode(true);
+        ul.appendChild(newli);
+         
+         //点击ol中li,触发的函数
+         function liClick(){
+             //2.2 让ul动态的去滚动
+             //发现ul移动的位置正好是图片的下标* 图片的宽度
+//             console.log(this);
+             //2.2.1 获取对应li的下标
+             var index = this.getAttribute('index');
+             //为了让indexGlobal永远和当前展示的图片的下标保持一致,当展示的图片改变时,也应该动太的修改indexGlobal的值
+             indexGlobal = index;
+             //2.2.2 获取图片的宽度
+             var imgWidth = screen.offsetWidth;
+             
+             //2.2.3 设置ul的位置
+//             ul.style.left = -index * imgWidth + 'px';
+             animate(-index * imgWidth, 7, ul);
+             
+//             2.2.4 点击谁让谁高亮
+             //排他
+             for(var i = 0; i < ol.children.length; i++) {
+                 ol.children[i].className = '';
+             }
+             this.className = 'current';
+             
+    
+         }
+         
+         //3. 鼠标移入到box中,让arr展示,移出,让arr隐藏
+        
+        //3.1 给box注册鼠标移入,移出事件
+        box.onmouseenter = function(){
+            //arr展示
+            arr.style.display = 'block';
+            
+            //停止自动轮播
+            clearInterval(timeid);
+            
+        }
+        
+        box.onmouseleave = function(){
+            //arr隐藏
+            arr.style.display = 'none';
+            
+            //开始自动轮播
+            timeid = setInterval(function(){
+                right.onclick();
+        
+            }, 3000)
+        }
+        
+        //4. 给arr的lef 和 rightt注册点击事件
+        left.onclick = function(){
+            //先判断,当前展示的是否是第一张 indexGlobal是否是0
+            if(indexGlobal == 0){
+                //如果当前是第一张,我们需要偷偷跳到最后一张
+//                console.log(lis.length - 1);
+                var lastIndex = lis.length - 1; //找到最后一张图的下标
+                //根据最后一张图的下标求出ul应该处于的位置
+                ul.style.left = -lastIndex * screen.offsetWidth + 'px';
+                indexGlobal = lis.length - 1;//让indexGlobal和展示的图片的下标保持一致
+            }
+            //一旦点击了left,那么展示上一张图片
+//            直接调用ol中上一个li的onclick
+//            如何知道当前展示的是第几张?
+//            console.log(indexGlobal);
+            indexGlobal--;
+            //找到ol中对应的li,然后调用自己的onclick
+            console.log(ol.children[indexGlobal]);
+            ol.children[indexGlobal].onclick();
+    
+        }
+        
+        right.onclick = function(){
+            //判断如果当前是第5张的时候, 下标是4的时候,我们需要自己手动写代码让ul从图片5滚动到最后一张的图片1
+            if(indexGlobal == ol.children.length - 1){
+                //证明当前展示的是第5张图
+//                我们需要自己写代码从5滚动到最后一张的1
+                //计算 目标位置
+                indexGlobal++; //变成了5
+//                -indexGlobal * screen.offsetWidth;
+                animate(-indexGlobal * screen.offsetWidth, 7, ul, function(){
+                    //一旦从5滚动到1执行完毕之后,立刻偷偷跳回到第一张
+                    ul.style.left = '0px';
+                    indexGlobal = 0;
+                });
+                //让数字1高亮
+                for(var i = 0; i < ol.children.length; i++) {
+                  ol.children[i].className = '';
+                }
+                ol.children[0].className = 'current';
+                
+                
+            }else{
+                indexGlobal++;
+                ol.children[indexGlobal].onclick();
+            }
+            
+           
+            
+        }
+        
+        //5. 自动轮播
+        var timeid = setInterval(function(){
+            right.onclick();
+            
+        }, 3000); //注意: 自动轮播的间隔时间不能太短
+        
+       
+    </script>
+
+</div>
+
+
+</body>
+</html>
+

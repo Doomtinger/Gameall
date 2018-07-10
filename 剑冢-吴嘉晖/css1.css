@@ -1,0 +1,357 @@
+/*首页*/
+/*首页背景*/
+.page {
+  /*display: none;*/
+}
+.page_bg1 {
+  width: 100%;
+}
+
+/*首页居中文字*/
+.page_banner {
+  width: 196px;
+  height: 70%;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page_banner_line {
+  width: 35px;
+  height: 0px;
+  padding: 0 15px;
+  border-left: 0.5px solid #fff;
+  font: 28px Fangsong;
+  color: #fff;
+  float: right;
+  overflow: hidden;
+}
+.page_banner_line:last-child {
+  border: none;
+}
+
+/*首页底部入口*/
+.page_bottom {
+  width: 410px;
+  height: 120px;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  background: url("img/dragArea_48919a7.png");
+}
+.page_bottom1 {
+  width: 113px;
+  height: 114px;
+  background: url("img/dragBtn_2cc57be.png");
+}
+#page_bottom1 {
+  z-index: 20;
+}
+
+/*第二页*/
+.page2 {
+  display: none;
+}
+/*第二页背景*/
+.page2_bg1 {
+  width: 2604px;
+  height: 2591px;
+  left: 50%;
+  top: 50%;
+  /*transform: translate(-50%, -50%);*/
+  margin-left: -1302px;
+  margin-top: -990px;
+  background: url("img/bg3_2071400.jpg") center 32% no-repeat;
+  animation: rotate 100s infinite linear;
+}
+@keyframes rotate{
+  100%{transform:rotate(360deg);}
+}
+.page2_bg2 {
+  left: 50%;
+  bottom: -220px;
+  transform: translateX(-50%);
+  width: 439px;
+  height: 777px;
+  background: url("img/swordPlatform_2e71799.png");
+}
+
+/*第二页中心圆*/
+.page2_circle {
+  width: 1000px;
+  height: 1000px;
+  top: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.5px solid #fff;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+/*第二页三入口*/
+.page2_entry {
+  cursor: pointer;
+}
+.page2_entry1 {
+  top: 400px;
+  left: 50%;
+  transform: translateX(-420%);
+}
+.page2_entry_bg1 {
+  width: 133px;
+  height: 160px;
+  background: url("img/entry1_1818a91.png");
+}
+.page2_entry2 {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.page2_entry_bg2 {
+  width: 149px;
+  height: 190px;
+  background: url("img/entry2_147d9fe.png");
+}
+.page2_entry3 {
+  top: 428px;
+  left: 50%;
+  transform: translateX(320%);
+}
+.page2_entry_bg3 {
+  width: 119px;
+  height: 130px;
+  background: url("img/entry3_03c35d4.png");
+}
+.page2_entry_txt {
+  color: goldenrod;
+}
+.page2_entry_tu {
+  width: 133px;
+  height: 30px;
+  background: url("img/icon2_73bbb5e.png") center no-repeat;
+  margin-top: 10px;
+}
+
+
+/*左侧导航栏*/
+.nav {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 80;
+}
+.nav li {
+  width: 100px;
+  height: 24px;
+  padding-top: 6px;
+  margin-bottom: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.nav li:nth-of-type(3){
+  font-size: 20px;
+}
+
+
+/*第三页 怪物*/
+.page3 {
+  display: none;
+}
+/*背景视频*/
+.page3_bg1 {
+  width: 100%;
+  top: -70px;
+  display: none;
+}
+/*左上序列*/
+.page3_nth {
+  top: 150px;
+  left: 450px;
+  width: 103px;
+  height: 112px;
+  background: url("img/count_e858d3d.png");
+}
+.page3_nth_txt {
+  top: 16px;
+  left: 30px;
+  color: #fff;
+  font: 900 28px Microsoft YaHei;
+}
+.page3_right {
+  top: 48%;
+  left: 60%;
+  width: 406px;
+  height: 406px;
+  transform: translateY(-50%);
+}
+.page3_right li {
+  width: 198px;
+  height: 198px;
+  position: absolute;
+}
+.page3_right li div {
+  width: 146px;
+  position: absolute;
+  height: 146px;
+  top: 22px;
+  left: 25px;
+  border: 1px solid #fff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.page3_right li:nth-of-type(1){
+  background: url("img/monsters01_eb39a7d.png");
+}
+.page3_right li:nth-of-type(2){
+  background: url("img/monsters02_54dd927.png");
+  left: 208px;
+}
+.page3_right li:nth-of-type(3){
+  background: url("img/monsters03_76fa883.png");
+  left: 104px;
+  top: 104px;
+}
+.page3_right li:nth-of-type(4){
+  background: url("img/monsters04_921aef3.png");
+  top: 208px;
+}
+.page3_right li:nth-of-type(5){
+  background: url("img/monsters05_86ae2e6.png");
+  left: 208px;
+  top: 208px;
+}
+/*底部标题*/
+.page3_title {
+  top: 70%;
+  left: 50%;
+  width: 220px;
+  height: 52px;
+  background-image: url("img/monstersHeading01.png");
+  background-repeat: no-repeat;
+}
+
+/*第四页 boss*/
+.page4 {
+  display: none;
+}
+.page4_bg1 {
+  width: 100%;
+}
+/*第四页左侧标题*/
+.page4_main {
+  left: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  height: 574px;
+  width: 580px;
+  background: url("img/line_f9c9c8c.png") 110px 0 no-repeat;
+}
+.page4_main_img1 {
+  top: 20%;
+  display: block;
+  width: 121px;
+  height: 120px;
+}
+.page4_main_img2 {
+  top: 40%;
+  width: 119px;
+  height: 198px;
+}
+.page4_main_txt {
+  width: 450px;
+  height: 84px;
+  left: 130px;
+  top: 150px;
+  text-align: left;
+}
+.page4_main_gif {
+  top: 300px;
+  left: 130px;
+}
+
+
+/*第五页 场景*/
+.page5 {
+  display: none;
+}
+.page5_bg1 {
+  width: 100%;
+  display: none;
+}
+/*第五页左侧地图*/
+.page5_map {
+  background: rgba(0, 0, 0, 0.3) url("img/map_99a2f26.png");
+  width: 751px;
+  height: 100%;
+}
+.page5_map > div {
+  width: 50px;
+  height: 100px;
+  cursor: pointer;
+}
+.page5_map div i {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("img/index_z_c5bef0f.png") -105px -62px no-repeat;
+}
+.page5_map_p1 {
+  top: 135px;
+  left: 135px;
+}
+.page5_map_p2 {
+  top: 195px;
+  right: 147px;
+}
+.page5_map_p3 {
+  top: 575px;
+  left: 315px;
+}
+.page5_map_p4 {
+  left: 55px;
+  top: 813px;
+}
+.page5_map_p5 {
+  right: 145px;
+  top: 822px;
+}
+.page5_map_p1 p {
+  width: 63px;
+  height: 21px;
+  background: url("img/mapHeading2_b430174.png");
+}
+.page5_map_p2 p {
+  width: 83px;
+  height: 20px;
+  background: url("img/mapHeading1_f8f0feb.png");
+}
+.page5_map_p3 p {
+  width: 83px;
+  height: 20px;
+  background: url("img/mapHeading3_4b706dd.png");
+}
+.page5_map_p4 p {
+  width: 84px;
+  height: 23px;
+  background: url("img/mapHeading5_6957e8e.png");
+}
+.page5_map_p5 p {
+  width: 65px;
+  height: 21px;
+  background: url("img/mapHeading4_49415cb.png");
+}
+.page5_map p {
+  position: absolute;
+  top: 40px;
+  left: 30%;
+  transform: translateX(-50%);
+}
+/*第五页右侧标题*/
+.page5_title {
+  top: 20%;
+  right: 20%;
+  width: 66px;
+  height: 182px;
+  background-image: url("img/mapHeadingLg1.png");
+  background-repeat: no-repeat;
+}

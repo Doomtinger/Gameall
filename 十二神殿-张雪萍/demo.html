@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .shendian  {
+      width: 929px;
+      height: 60%;
+      background-image: url(images/38.png);
+      background-position: 0 80%;
+      position: absolute;
+      left: 50%;
+      top:0;
+      transform: translateX(-35%);
+    }
+  </style>
+</head>
+<body>
+<div class= "shendian" id="box">
+
+</div>
+<img src="images/38.png" alt="">
+<img src="images/37.png" alt="">
+<img src="images/36.png" alt="">
+<img src="images/35.png" alt="">
+<img src="images/34.png" alt="">
+<img src="images/33.png" alt="">
+<img src="images/32.png" alt="">
+<img src="images/31.png" alt="">
+<img src="images/30.png" alt="">
+<img src="images/29.png" alt="">
+<img src="images/28.png" alt="">
+<img src="images/27.png" alt="">
+<img src="images/26.png" alt="">
+<img src="images/25.png" alt="">
+<img src="images/24.png" alt="">
+<img src="images/23.png" alt="">
+<img src="images/22.png" alt="">
+<img src="images/21.png" alt="">
+<img src="images/20.png" alt="">
+<img src="images/19.png" alt="">
+<img src="images/18.png" alt="">
+<img src="images/16.png" alt="">
+<img src="images/15.png" alt="">
+<img src="images/14.png" alt="">
+<img src="images/13.png" alt="">
+<img src="images/12.png" alt="">
+<img src="images/11.png" alt="">
+<img src="images/10.png" alt="">
+<img src="images/9.png" alt="">
+<img src="images/8.png" alt="">
+<img src="images/7.png" alt="">
+<img src="images/6.png" alt="">
+<img src="images/5.png" alt="">
+<img src="images/4.png" alt="">
+<img src="images/3.png" alt="">
+<img src="images/2.png" alt="">
+<img src="images/1.png" alt="">
+<img src="images/0.png" alt="">
+
+
+<script>
+
+  var box = document.getElementById("box");
+  var arr = [
+    'url(images/38.png)',
+    'url(images/37.png)',
+    'url(images/36.png)',
+    'url(images/35.png)',
+    'url(images/34.png)',
+    'url(images/33.png)',
+    'url(images/32.png)',
+    'url(images/31.png)',
+    'url(images/30.png)',
+    'url(images/29.png)',
+    'url(images/28.png)',
+    'url(images/27.png)',
+    'url(images/26.png)',
+    'url(images/25.png)',
+    'url(images/24.png)',
+    'url(images/23.png)',
+    'url(images/22.png)',
+    'url(images/21.png)',
+    'url(images/20.png)',
+    'url(images/19.png)',
+    'url(images/18.png)',
+    'url(images/17.png)',
+    'url(images/16.png)',
+    'url(images/15.png)',
+    'url(images/14.png)',
+    'url(images/13.png)',
+    'url(images/12.png)',
+    'url(images/11.png)',
+    'url(images/10.png)',
+    'url(images/9.png)',
+    'url(images/8.png)',
+    'url(images/7.png)',
+    'url(images/6.png)',
+    'url(images/5.png)',
+    'url(images/4.png)',
+    'url(images/3.png)',
+    'url(images/2.png)',
+    'url(images/1.png)',
+    'url(images/0.png)'
+  ];
+  var index=0;
+  var tiid = setInterval(function(){
+    if(index >= 38){
+      index = 0;
+    }
+    index++;
+    box.style.backgroundImage = arr[index];
+    if (index == arr.length - 1){
+      clearInterval(tiid);
+    }
+  },100);
+</script>
+</body>
+</html>

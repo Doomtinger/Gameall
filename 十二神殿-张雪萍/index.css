@@ -1,0 +1,678 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+.clearfix::before, .clearfix::after {
+	content: " ";
+	display: table;
+}
+.clearfix::after {
+	clear: both;
+}
+.clearfix {
+	*zoom: 1;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.fx {
+	position: fixed;
+}
+.ab {
+	position: absolute;
+}
+.re {
+	position: relative;
+}
+
+
+/*背景图片*/
+
+
+/*顶部*/
+.top {
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  left: 20px;
+  top: 20px;
+}
+.top_ul {
+  top: 20px;
+  height: 43px;
+  right: 20px;
+  /*background: pink;*/
+}
+.top_ul li {
+  float: left;
+  margin: 0 8px;
+}
+.top_ul li a {
+  display: block;
+}
+.top1 {
+  width: 106px;
+  height: 43px;
+  background: url("images/fuben.png") center no-repeat;
+}
+.top2 {
+  width: 43px;
+  height: 43px;
+  background: url("images/full.png");
+}
+.audio_con {
+  border-left: 0.5px solid #fff;
+  padding-left: 16px;
+  cursor: pointer;
+}
+.audio_pic {
+  display: inline-block;
+  width: 43px;
+  height: 43px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  vertical-align: top;
+  position: relative;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.audio_line1 {
+  display: block;
+  width: 2px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  left: 38%;
+}
+.audio_line2 {
+  display: block;
+  width: 2px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  top: 35%;
+  right: 38%;
+}
+.audio_txt {
+  display: inline-block;
+  color: #fff;
+  font: 14px/45px Microsoft Yahei;
+}
+
+
+/*十二神殿背景图*/
+.bg {
+	position: fixed; 
+	width: 100%;
+	height: 100%;
+	background: url(images/bg.jpg);
+}
+body {
+	position: relative;
+}
+
+.bg .shendian  {
+	width: 929px;
+	height: 60%;
+	background-image: url(images/38.png);
+	background-position: 0 80%;
+	position: absolute;
+	left: 50%;
+	top:0;
+	transform: translateX(-35%);
+}
+.bg .strong {
+	position: absolute;
+	left: 50%;
+	top: -65%;
+	transform: translateX(-50%);
+	/*background: pink;*/
+}
+.bg .strong p {
+	font-size: 14px;
+	color: #868686;
+
+}
+.bg .strong .guard {
+	text-align: center;
+	line-height: 35px;
+}
+
+/*底部拖动部分*/
+
+#bottom {
+ width: 300px;
+ height: 90px;
+ background: url(images/load.png) no-repeat;
+ position: absolute;
+ bottom: 5%;
+ left: 50%;
+ transform:translateX(-50%);
+}
+#btm {
+	width: 258px;
+	height: 56px;
+	/*background: pink;*/
+	position: absolute;
+	bottom: 18%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+ #move {
+	width: 56px;
+	height: 56px;
+	background: url(images/arrow1_baff938a.png);
+	position: absolute;
+	bottom: 2%;
+	left: 0;
+}
+
+
+.xiangqing_bg {
+	width: 100%;
+	height: 100%;
+	display: none;
+	background: url(images/xqbg.png);
+}
+.xiangqing_bg .big_circle {
+	width: 100%;
+	height: 100%;
+	background: url(images/xian.png) center no-repeat;
+	position: relative;
+}
+
+.xiangqing_bg .big_circle .second_circle {
+	width: 806px;
+	height: 806px;
+	background: url(images/circle.png);
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-52%, -50%);
+}
+.xiangqing_bg .third_circle {
+	width: 712px;
+	height: 712px;
+	background: url(images/nav-ie8_caa0c63b.png);
+	position: absolute;
+	left: 46px;
+	top: 46px;
+}
+
+
+
+
+
+.xiangqing_bg .word_circle {
+	width: 402px;
+	height: 398px;
+	background: url(images/word.png);
+	position: absolute;
+	top: 159px;
+	left: 155px;
+	z-index: -35;
+}
+.xiangqing_bg .text_circle {
+	width: 326px;
+	height: 324px;
+	background: url(images/wenzi.png);
+	position: absolute;
+	top: 38px;
+	left: 38px;
+}
+.xiangqing_bg .center_circle {
+	width: 151px;
+	height: 151px;
+	background: url(images/nav-circle1_60646e03.png);
+	position: absolute;
+	top: 82px;
+	left: 86px;
+}
+.third_circle i {
+	display: block;
+}
+
+/*第一个图老鼠*/
+.xiangqing_bg .third_circle .tu_one {
+	width: 145px;
+	height: 145px;
+	 background: url(images/nav-icons_49a5ec5c.png) 0 0;
+	/*background: red;*/
+	position: absolute;
+	top: 2%;
+	left: 50%;
+}
+.xiangqing_bg .third_circle .tu_one .cai_one {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(images/chumo.png) no-repeat 0 0;
+	display: none;
+	}
+
+.xiangqing_bg .third_circle .huo_one {
+	position: absolute;
+	width: 190px;
+	height: 158px;
+	background: url(images/huoguang.png);
+	display: none;
+}
+
+
+   /*第二个*/
+.xiangqing_bg .third_circle .tu_two {
+	width: 145px;
+	height: 145px;
+	background: url(images/nav-icons_49a5ec5c.png) 0 -144px;
+	position: absolute;
+	top: 12%;
+	left: 67.5%;
+}
+
+.xiangqing_bg .third_circle .tu_two .cai_two {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(images/chumo.png) 0 -144px;
+	display: none;
+	z-index: 900;
+}
+
+
+/*第三个图片*/
+.xiangqing_bg .third_circle .tu_three {
+	width: 145px;
+	height: 146px;
+	background: url(images/nav-icons_49a5ec5c.png) 0 -289px;
+	position: absolute;
+	top: 29.5%;
+	left: 77.5%;
+}
+.xiangqing_bg .third_circle .tu_three .cai_three {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: url(images/chumo.png) 0 -287px;
+	display: none;
+}
+
+/*第四个图片*/
+.xiangqing_bg .third_circle .tu_four {
+	width: 145px;
+	height: 146px;
+	background: url(images/nav-icons_49a5ec5c.png) 0 -434px;
+	position: absolute;
+	left: 77.5%;
+	top: 50%;
+}
+
+.xiangqing_bg .third_circle .tu_four .cai_four  {
+	width: 100%;
+	height: 100%;
+	background: url(images/chumo.png) 0 -432px;
+	display: none;
+	position: absolute;
+}
+
+/*第五个*/
+ .xiangqing_bg .third_circle .tu_five {
+	 width: 145px;
+	 height: 145px;
+	 background: url(images/nav-icons_49a5ec5c.png) 0 -580px;
+	 position: absolute;
+	 left: 67.5%;
+	 top: 67.5%;
+ }
+.xiangqing_bg .third_circle .tu_five  .cai_five {
+	width: 100%;
+	height: 100%;
+	background: url(images/chumo.png) 0 -576px;
+	display: none;
+	position: absolute;
+}
+
+/*第六个*/
+  .xiangqing_bg .third_circle .tu_six {
+		width: 145px;
+		height: 145px;
+		background: url(images/nav-icons_49a5ec5c.png) 0 -725px;
+		position: absolute;
+		left: 50%;
+		top: 78%;
+	}
+	.xiangqing_bg .third_circle .tu_six .cai_six {
+		width: 100%;
+		height: 100%;
+		background: url(images/chumo.png) 0 -721px;
+		position: absolute;
+		display: none;
+	}
+
+	.xiangqing_bg .third_circle .tu_seven {
+			width: 145px;
+			height: 145px;
+			background: url(images/nav-icons_49a5ec5c.png) 0 -870px;
+			position: absolute;
+			left: 29.5%;
+			top: 77.5%;
+		}
+	.xiangqing_bg .third_circle .tu_seven .cai_seven {
+		width: 100%;
+		height: 100%;
+		background: url(images/chumo.png) 0 -864px;
+		position: absolute;
+		display: none;
+	}
+
+	.xiangqing_bg .third_circle .tu_eight {
+		width: 145px;
+		height: 145px;
+		background: url(images/nav-icons_49a5ec5c.png) 0 -1016px;
+		position: absolute;
+		left: 12%;
+		top: 67.5%;
+	}
+ 	.xiangqing_bg .third_circle .tu_eight .cai_eight {
+		width: 100%;
+		height: 100%;
+		background: url(images/chumo.png) 0 -1008px;
+		display: none;
+		position: absolute;
+		/*为什么这个定位可以控制火光*/
+	}
+
+	.xiangqing_bg .third_circle .tu_night {
+		width: 145px;
+		height: 145px;
+		background: url(images/nav-icons_49a5ec5c.png) 0 -1160px;
+		position: absolute;
+		top: 50%;
+		left: 2%;
+	}
+
+	 	.xiangqing_bg .third_circle .tu_night .cai_night {
+			width: 100%;
+			height: 100%;
+			background: url(images/chumo.png) 0 -1152px;
+			position: absolute;
+			display: none;
+		}
+
+		.xiangqing_bg .third_circle .tu_ten {
+			width: 145px;
+			height: 144px;
+			background: url(images/nav-icons_49a5ec5c.png) 0 -1306px;
+			position: absolute;
+			top: 29.7%;
+			left: 2.3%;
+		}
+		.xiangqing_bg .third_circle .tu_ten .cai_ten {
+			width: 100%;
+			height: 100%;
+			background: url(images/chumo.png) 0 -1296px;
+			position: absolute;
+			display: none;
+		}
+
+   .xiangqing_bg .third_circle .tu_eleven {
+		 width: 145px;
+		 height: 145px;
+		 background: url(images/nav-icons_49a5ec5c.png) 0 -1450px;
+		 position: absolute;
+		 top: 12.3%;
+		 left: 12.5%;
+	 }
+	 .xiangqing_bg .third_circle .tu_eleven .cai_eleven {
+		 width: 100%;
+		 height: 100%;
+		 background: url(images/chumo.png) 0 -1440px;
+		 position: absolute;
+		 display: none;
+	 }
+
+	 .xiangqing_bg .third_circle .tu_twelve {
+		 width: 145px;
+		 height: 144px;
+		 background: url(images/nav-icons_49a5ec5c.png) 0 -1596px;
+		 position: absolute;
+		 top: 2%;
+		 left: 30%;
+	 }
+	  .xiangqing_bg .third_circle .tu_twelve .cai_twelve {
+			width: 100%;
+			height: 100%;
+			background: url(images/chumo.png) 0 -1584px;
+			position: absolute;
+			display: none;
+		}
+
+		/*.bigimg {*/
+			/*width: 408px;*/
+			/*height: 408px;*/
+			/*!*background: red;*!*/
+			/*position: relative;*/
+			/*top: 19%;*/
+			/*left: 33.8%;*/
+			/*border: 1px solid #000;*/
+			/*border-radius: 50%;*/
+			/*overflow: hidden;*/
+			/*z-index: 1;*/
+		/*}*/
+/*.display {*/
+	/*display: none;*/
+/*}*/
+/*.w {*/
+	/*width: 408px;*/
+	/*height: 408px;*/
+
+/*}*/
+/*.bigimg .oneimg {*/
+	/*background: url(images/chumo.png) 0px 0px no-repeat;*/
+	/*background-size: 100%;*/
+	/*position: absolute;*/
+	/*z-index: 600;*/
+/*}*/
+/*.bigimg .twoimg {*/
+	/*background: url(images/chumo.png) 0px -408px no-repeat;*/
+	/*background-size: 100%;*/
+	/*position: absolute;*/
+	/*z-index: 1;*/
+/*}*/
+/*.bigimg .threeimg {*/
+	/*background: url(images/chumo.png) 0px -816px no-repeat;*/
+	/*background-size: 100%;*/
+	/*position: absolute;*/
+	/*z-index: 600;*/
+/*}*/
+
+
+
+.tu {
+	width: 410px;
+	height: 410px;
+	/*background: red;*/
+	position: absolute;
+	background-size: 100%;
+	top: 50%;
+	left: 48.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+.tuone {
+	width: 410px;
+	height: 410px;
+	background: url("chumo.png") 0px 0px no-repeat;
+	position: absolute;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	background-size: 100%;
+	display: none;
+}
+
+.tutwo {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -410px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tuthree {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -820px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tufour {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -1230px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tufive {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -1640px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tusix {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -2050px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tuseven {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -2460px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tueight {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -2870px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tunight {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -3280px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tuten {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -3690px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tueleven {
+	width: 410px;
+	height:410px;
+	background: url(chumo.png) 0px -4100px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+.tutwelve {
+	width: 410px;
+	height: 410px;
+	background: url(chumo.png) 0px -4510px no-repeat;
+	position: absolute;
+	background-size: 100%;
+	top: 49.5%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	display: none;
+
+}
+
+
+
+
+
+

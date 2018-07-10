@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="css/map.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<div class= 'container'>
+  <!--里面的盒子-->
+  <div class= 'box'>
+    <!--天谕图像-->
+    <a class="logo js-position" href="#">
+      <img src="images/toubu/logo.png">
+    </a>
+    <div class= 'nav'>
+      <img src="images/map/nav2_80f9979.png" alt="" class= 'nav__bg full'>
+      <a href="thunder.html" class= 'nav__last' data-link= 'thunder'>雷电区</a>
+      <span class= 'nav__active'>龙渊入口</span>
+      <a href="ice.html" class= 'nav__next'>冰墓区</a>
+    </div>
+    <!--背景图片-->
+    <div class= 'bg'>
+      <img src="images/toubu/map-bg_a1d7466.jpg" alt="">
+    </div>
+    <a href="../副本首页-王学忠/tianyu.html" title="" class="back" >副本汇总</a>
+    <!--音乐-->
+    <div class="music">
+
+      <div class="music__text">音乐</div>
+
+    </div>
+    <a href="thunder.html" class="last-page" title="返回" style="position: absolute; ">
+      <span></span>
+    </a>
+    <div class= 'page__map'>
+      <div class= 'map__body'>
+        <div class= 'map__paper'>
+          <img  class= 'map__img' id = 'map__img' src="images/map/map_be9686e.png" alt="">
+          <!--古龙-->
+          <div class= 'map__point__gulong' id = 'map__point__gulong' ></div>
+          <img  class= 'map__mark__gulong' src="images/map/gulong-map-mark_26ace54.png" alt="">
+          <div class= 'map__modal__gulong' id = 'map__modal__gulong' style= "display: none">
+            <div class= 'map__modal-body'>
+              <img class= 'map__modal-img' src="images/map/hailong-map-slogan_ea7a0e0.png" alt="">
+              <div class= 'map__modal-title'></div>
+              <div class= 'map__modal-line'></div>
+              <div class= 'map__modal-desc'>
+                <p>古谷山龙，曾跟随祖龙遨游灵界，起誓守护祖龙。</p>
+              </div>
+              <a  class= 'map__modal-btn' href="hailong.html">查看BOSS详情</a>
+            </div>
+          </div>
+
+          <!--麒麟-->
+          <div class= 'map__point__qilin'></div>
+          <img class= 'map__mark__qilin' src="images/map/qilin-map-mark_e15f973.png" alt="">
+          <!--雷电区-->
+          <img class= 'map__point__lighting' src="images/map/thunder-icon_8690ff2.png" alt="">
+          <div class= 'map__mark__lighting'></div>
+          <img class= 'map__point__thunder' src="images/map/map-thunder-text_fd402d4.png" alt="">
+          <!--凯龙-->
+          <div class= 'map__point__kailong'></div>
+          <img class= 'map__mark__kailong' src="images/map/kailong-map-mark_02d2c41.png" alt="">
+
+          <div class= 'map__modal'>
+            <img class= 'map__modal-bg' src="" alt="">
+            <div class= 'map__modal-body'>
+              <img class= ='map__modal-img' src="images/map/kailong-map-slogan_cea76fb.png" alt="">
+              <div class= 'map__modal-title'>熔铠魔龙</div>
+              <div class="map__modal-line"></div>
+              <div class="map__modal-desc">
+                <p>灵智未开化的亚龙蜥蜴，本身便亲和熔岩。</p>
+              </div>
+              <a class="map__modal-btn" href="javascript:;" data-link="kailong">查看BOSS详情</a>
+            </div>
+          </div>
+          <!--守门-->
+          <div class= 'map__point__shoumen'></div>
+          <img class= 'map__mark__shoumen' src="images/map/shoumen-map-mark_cf209ea.png" alt="">
+          <!--熔岩区-->
+          <img  class= 'map__mark__rongyan' src="images/map/lava-mark_0254344.png" alt="">
+          <div class= 'map__mark__rongyan1'></div>
+          <img class= 'map__point__rongyan' src="images/map/map-lava-text_72fa6db.png" alt="">
+          <!--腐败-->
+          <div class= 'map__point__fubai'></div>
+          <img class= 'map__mark__fubai' src="images/map/fubai-map-mark_1eb84f8.png" alt="">
+          <!--吞噬-->
+          <div class= 'map__point__tunshi'></div>
+          <img class= 'map__mark__tunshi' src="images/map/tunshi-map-mark_e2fee99.png" alt="">
+          <!--沼泽-->
+          <img class= 'map__mark__zhaoze' src="images/map/swamp-mark_5a81607.png" alt="">
+          <div class= 'map__mark__zhaoze1'></div>
+          <img class= 'map__point__zhaoze' src="images/map/map-swamp-text_97aa97e.png" alt="">
+          <!--寒冰区-->
+          <div class= 'map__point__hanbing'></div>
+          <img class= 'map__mark__hanbing' src="images/map/hanbing-map-mark_03ebaeb.png" alt="">
+          <!--海龙区-->
+          <div class= 'map__point__hailong' id = 'map__point__hailong' style=" display: block;"></div>
+          <img class= 'map__mark__hailong' id = 'map__mark__hailong'  src="images/map/hailong-map-mark_72d3239.png" alt="">
+          <div class="map__modal__hailong" id="map__modal__hailong" style=" display: none;">
+            <img class="map__modal-bg" src="images/map/modal-shadow_8cf59ea.png">
+            <div class="map__modal-body">
+              <img class="map__modal-img" src="images/map/hailong-map-slogan_ea7a0e0.png" >
+              <div class="map__modal-title">冰川海龙</div>
+              <div class="map__modal-line"></div>
+              <div class="map__modal-desc">
+                <p>生性冰寒，常年避驻水下，被打扰时，会爆发海啸般的愤怒。</p>
+              </div>
+              <a class="map__modal-btn" href="hailong.html" data-link="hailong">查看BOSS详情</a>
+            </div>
+          </div>
+          <!--冰墓区-->
+          <a href="ice.html"><img class= 'map__mark__bingmu' src="images/map/ice-mark_e0e2fe6.png" alt=""></a>
+          <div class= 'map__mark__bingmu1' id = 'map__mark__bingmu1'></div>
+          <img class= 'map__point__bingmu' src="images/map/map-ice-text_9509236.png" alt="">
+          </div>
+        <div class= 'map__mask--bottom' ></div>
+        <div class= 'map__paompt' id = 'map__paompt'>
+          <img class= 'map__move' src="images/map/move-map_53e8c07.png" alt="">
+          <span>拖动鼠标移动地图</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+ var map__mark__hailong = document.getElementById('map__mark__hailong');
+ var map__modal__hailong = document.getElementById('map__modal__hailong');
+ map__mark__hailong.onclick = function(){
+
+   map__modal__hailong.style.display = 'block';
+   map__mark__hailong.style.display = 'none';
+ };
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+</body>
+</html>
